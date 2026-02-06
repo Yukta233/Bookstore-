@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+      .nav-item{
+        margin-right: 40px
+          }
+      /* .logo{
+        margin-left:20px;
+      } */
+       #container{
+        width:1320px;
+        height: auto;
+        margin: auto;
+       }
+       .background img{
+        width:1320px;
+        height: 430px;
+        margin-top: 20px;
+        border-radius: 20px;
+       }
+       .background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .text{
+        line-height: 1.8;
+        margin-top: 35px;
+        font-size: 1.5rem;
+
+       }
+       .text span{
+        color : red;
+        font-style: italic;
+       }
+       .books{
+        font-size: 1.2rem;
+        margin-top: 30px;
+        font-weight: bold;
+       }
+       .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+       }
+       .modal.fade.show .modal-dialog {
+  animation: popBounce 0.4s ease;
+}
+
+@keyframes popBounce {
+  0% {
+    transform: scale(0.6);
+  }
+  60% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.visit-btn {
+  padding: 6px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.visit-btn:hover {
+  transform: translateY(-2px);
+  transition: 0.3s ease;
+}
+.carousel-item {
+  min-height: 60vh;
+}
+
+.carousel-item img {
+  max-height: 350px;
+  max-width:300px;
+}
+#carouselExample {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #carouselExample {
+    max-width: 100%;
+  }
+}
+.carousel-control-prev {
+  left: -100px;
+}
+
+.carousel-control-next {
+  right: -50px;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="Home.html">Home</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link text-dark" href="#">Bookstore</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+<div id="container">
+<div class="background">
+  <img src ="Images/pexels-haberdoedas-32460012.jpg"/>
+</div>
+<div class="text text-center">
+  <p>A reader lives a thousand lives before he dies. The man who never reads lives only one.<br> <span>~George R.R. Martin</span> </p>
+</div>
+<div class="books">
+  <p>Explore thousands of stories, authors, and genres — all in one beautiful place.</p>
+</div>
+<div class="section">
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/files/9781786330895.jpg?v=1765543413" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">Ikigai</h5>
+
+    <p class="card-text mb-1">
+      Hector Garcia
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal">
+       View more
+    </a>
+  </div>
+    <div class="modal fade" id="bookModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ikigai</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> Hector Garcia</p>
+        <p>Ikigai invites you to explore the timeless idea of ikigai, a Japanese concept meaning "a reason to live" or "a reason to get up in the morning." Blending ancient wisdom with contemporary research, it guides readers toward the sweet spot where passion, mission, vocation, and profession intersect. Written for curious adults and anyone seeking a more meaningful daily life, this book offers a calm, hopeful, and educational tone that invites reflection and action.
+
+Structured as a thoughtful guide, Ikigai weaves short chapters with reflective exercises you can pause on, revisit, and apply. It shares inspiring stories from Okinawa to illustrate how purpose shapes everyday life, and the pace is steady and approachable so readers can absorb ideas without feeling overwhelmed. The content is presented through clear explanations, practical steps, and prompts that invite you to discover your own ikigai and begin living it every day. Key concepts include discovering your purpose, balancing passion with vocation, and cultivating well-being through intentional daily choices.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/files/71nFZtlW_oL._SL1500.jpg?v=1769503756" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 0.8rem; font-weight: bold;">Winning People Without Losing Yourself</h5>
+
+    <p class="card-text mb-1">
+      Ankur Warikoo
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <small class="text-muted">(4)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal1">
+       View more
+    </a>
+  </div>
+</div>
+  <div class="modal fade" id="bookModal1" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Winning People Without Losing Yourself</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> Ankur Warikoo</p>
+<p> This non-fiction guide helps adults master the art of navigating people without losing themselves. It focuses on how people behave, why they behave that way, and how you can respond with clarity instead of chaos. The central purpose is to provide practical tools for calmer, more confident interactions in work, home, and everyday life. Designed for readers seeking personal growth and professional development, the tone is reassuring, practical, and empowering.
+
+Content is presented as concise, page-length insights—one idea per page that you can read in minutes. Each page stands alone, yet together they form a practical framework for understanding behavior, setting boundaries, and choosing responses over reactions. The reading experience is calm, approachable, and designed for quick, repeatable learning, with interactive reflection that fits busy lives.
+
+What makes it engaging is the warm, no-nonsense voice and real-life scenarios that illustrate common situations. The compact, readable style invites reflection, with practical prompts you can adapt to your own relationships at work, at home, or with friends. You can flip to any page and begin applying a fresh perspective right away, making every reading session meaningful.</p>      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/files/Atomic_Habits_1_1.webp?v=1745491776" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">Atomic Habits</h5>
+
+    <p class="card-text mb-1">
+      James Clear
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <small class="text-muted">(5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal2">
+       View more
+    </a>
+  </div>
+</div>
+<div class="modal fade" id="bookModal2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Atomic Habits</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> James Clear</p>
+<p>Atomic Habits is a practical guide to lasting change that shows how tiny, consistent actions compound into extraordinary results. Part self-help, part psychology, this book helps you rethink goals and harness the power of small daily habits. Suitable for adults and curious readers who want more productivity, motivation, and well-being, its warm, encouraging tone makes complicated ideas feel accessible.
+
+In Atomic Habits, James Clear breaks the core idea into clear, actionable steps. The book explains how tiny changes—1 percent improvements—daily can rewrite your trajectory and shows you how to build effective routines, design your environment, and leverage strategies like Habit Stacking and the Two Minute Rule. Written in a warm, accessible voice with real-world stories from Olympic athletes, successful CEOs, and scientists, it blends cutting-edge psychology with practical guidance so the path to change feels doable rather than daunting.</p>    </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/files/a-good-girls-guide-to-murder-bk0449991-40497325801689.jpg?v=1746628950" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">A Good Girls Guide To Murder</h5>
+
+    <p class="card-text mb-1">
+     Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal3">
+       View more
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="bookModal3" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">A Good Girls Guide To Murder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> Holly Jackson</p>
+<p>
+  A Good Girls Guide To Murder is a YA crime thriller that follows Pip as she investigates a five-year-old murder in a close-knit town. Part mystery, part social realism, this book is written for teens and young adults who crave clever puzzles, sharp wit, and suspense that keeps you up at night. The tone blends tense, page-turning drama with dark humor and a sense of purpose that will resonate with readers who want truth and justice, not just answers.
+
+In A Good Girls Guide To Murder, the story unfolds through an innovative blend of interviews, logs, and murder maps, letting you hear Pip's voice as she gathers clues, questions the town’s narratives, and pieces together a case that refuses to stay closed. The experience is immersive and uniquely engaging, inviting you to follow along as Pip weighs motives, tests evidence, and learns how bias, privilege, and fear can shape what a community chooses to believe. The pace is gripping, the humor is sly, and the stakes feel personal as the investigation digs ever deeper into secrets that have long been buried.
+</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="bookModal5" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Shatter Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> Tahereh Mafi</p>
+<p>Shatter Me, Tahereh Mafi's gripping dystopian novel in paperback, follows Juliette Ferrars, a 17-year-old girl with a deadly touch, as she is confined by The Reestablishment and forced to navigate a crumbling world. Part thriller, part romance, this YA tale is perfect for readers who crave fast-paced suspense, emotional depth, and a heroine who discovers her power. The tone is urgent, intimate, and hopeful as Juliette questions who she is and what she’s willing to fight for.
+
+Shatter Me is written in Juliette's intimate, first-person perspective, with lean, propulsive chapters and a lyrical, emotionally charged voice. The formatting mirrors her inner voice at pivotal moments, creating a distinctive reading rhythm that heightens tension. The narrative blends danger, romance, and coming‑of‑age discovery as Juliette learns to trust, resist, and define her own power. The worldbuilding—the Reestablishment’s grip on a broken society—feels immediate and dangerous, while the relationship with Adam Kent adds a charged, unpredictable layer to the journey.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="bookModal4" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">As Good As Dead</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <p><strong>Author:</strong> Holly Jackson</p>
+<p> As Good As Dead is the thrilling conclusion to the bestselling A Good Girl's Guide to Murder series. In this high-stakes YA mystery thriller, Pip Fitz-Amobi heads to college under the weight of online threats and a chilling message: "Who will look for you when you're the one who disappears?" Perfect for teen and adult readers who crave clever plotting, gutsy protagonists, and edge-of-your-seat suspense, this final installment delivers a tense, emotional ride that lingers long after the last page.
+
+Written in a lean, immersive voice, As Good As Dead unfolds through Pip's determined perspective as she navigates a new campus, old secrets, and a growing web of danger. The book is structured to tighten the suspense with brisk chapters, sharp deductions, and moments of quiet reflection that reveal Pip's resilience. The experience is immersive and cinematic—pulsing with twists, evocative settings, and a relentless pursuit of truth that makes the reader feel every step Pip takes.
+
+As the threats escalate, Pip's investigation merges with real-world stakes—from unfamiliar college corridors to the shadowy corners of a past case. The story intertwines friendship, loyalty, and the cost of seeking truth, while never losing its focus on Pip's courage and wit. Fans of mystery and crime fiction will appreciate the careful plotting, the sense of place on campus, and the way the past and present collide to drive the final reckoning.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="text-center" style="margin-top:30px">
+  <a href="Bookstore.html" class="btn btn-warning visit-btn">
+    Visit the Bookstore
+  </a>
+</div>
+
+<div class="authors">
+  <h4 class="text-center" style="margin-top:40px">Meet the Minds Behind the Stories</h4>
+  <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>J.K Rowling</h2>
+            <p class="text-muted">
+              J.K. Rowling is one of the most successful and influential authors of modern literature, best known for the globally loved <b>Harry Potter series</b>. Starting with Harry Potter and the Philosopher’s Stone, the series follows a young wizard’s journey through friendship, courage, loss, and self-discovery. The books combine fantasy, adventure, and emotional depth, appealing to readers of all ages. Rowling’s vivid imagination and richly developed characters helped redefine children’s and young adult fiction, making the Harry Potter universe a cultural phenomenon worldwide.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/Images/jk rowling.jpg" class="img-fluid" alt="jk rowling">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>George R.R. Martin</h2>
+            <p class="text-muted">
+             George R.R. Martin is a celebrated American author best known for his epic fantasy series A Song of Ice and Fire. His novels, including <b>A Game of Thrones, A Clash of Kings, and A Storm of Swords</b>, are admired for their intricate storytelling, morally complex characters, and intense political drama. Unlike traditional fantasy, Martin’s work emphasizes realism, unexpected plot twists, and the consequences of power. His writing gained massive global recognition through the television adaptation Game of Thrones, influencing modern fantasy literature significantly
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/Images/georgerrmartin.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Haruki Murakami</h2>
+            <p class="text-muted">
+             Haruki Murakami is a globally renowned Japanese author known for blending magical realism with deep psychological themes. His novels often explore loneliness, identity, and the hidden layers of everyday life. Some of his most famous works include <b> Norwegian Wood, Kafka on the Shore, and 1Q84</b>. Murakami’s storytelling style is distinctive for its surreal imagery, introspective characters, and dream-like narratives. His books have been translated into many languages and are widely read across the world, making him one of the most influential contemporary authors in modern literature.
+  </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/Images/haruki.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2>Paulo Coelho</h2>
+            <p class="text-muted">
+              Paulo Coelho is an internationally acclaimed author whose books focus on self-discovery, purpose, and spiritual growth. His most famous novel, <b>The Alchemist</b>, has inspired millions of readers to follow their dreams and listen to their inner voice. Other popular works, such as Brida and Eleven Minutes, continue to explore themes of love, destiny, and personal transformation. Coelho’s simple yet meaningful writing style makes his books accessible to readers worldwide, earning him a place among the most influential contemporary authors.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/Images/paulo.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button"
+    data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button"
+    data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+</div>
+
+
+<div class="container-fluid genre-section" id="genreSection">
+  <div class="row">
+
+    <!-- LEFT GENRE LIST -->
+    <div class="col-md-3 genre-list">
+      <ul>
+        <li onclick="showGenre('mystery')">Mystery</li>
+        <li onclick="showGenre('romcom')">RomCom</li>
+        <li onclick="showGenre('horror')">Horror</li>
+        <li onclick="showGenre('crime')">Crime</li>
+        <li onclick="showGenre('classics')">Classics</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT BOOK DISPLAY -->
+    <div class="col-md-9">
+      <h2 id="genreTitle" style="margin-bottom: 15px;">Mystery Books</h2>
+
+      <div class="row" id="booksContainer">
+        <!-- Books will change here -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  function showGenre(genre) {
+     var section = document.getElementById("genreSection");
+    var title = document.getElementById("genreTitle");
+    var container = document.getElementById("booksContainer");
+
+    container.innerHTML = "";
+
+    if (genre === "mystery") {
+      section.style.background = "linear-gradient(to right, #ccefff, #eaf8ff)";
+      title.innerText = "Mystery Books";
+      container.innerHTML = `
+        <div class="mystery col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/files/a-good-girls-guide-to-murder-bk0449991-40497325801689.jpg?v=1746628950" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">A Good Girls Guide To Murder</h5>
+
+    <p class="card-text mb-1">
+     Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal3">
+       View more
+    </a>
+  </div>
+</div>
+
+        </div>
+        
+        <div class="mystery col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/products/as-good-as-dead-bk0444427-40532738212057.jpg?v=1746656549" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">As Good As Dead</h5>
+
+    <p class="card-text mb-1">
+     Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal4">
+       View more
+    </a>
+  </div>
+</div>
+
+        </div>
+         <div class="mystery col-md-4">
+<div class="card" style="width: 18rem;">
+  <img src="https://www.crossword.in/cdn/shop/products/egmont-1-april-2018-books-default-title-shatter-me-shatter-me-paperback-tahereh-mafi-40434653593817.jpg?v=1746656269" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">Shatter Me</h5>
+
+    <p class="card-text mb-1">
+    Taberah Mahi
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <small class="text-muted">(4)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal5">
+       View more
+    </a>
+  </div>
+</div>
+
+        </div>
+      `;
+    }
+
+    if (genre === "romcom") {
+         section.style.background = "linear-gradient(to right, #ffe6f0, #fff1f7)";
+      title.innerText = "RomCom Books";
+      container.innerHTML = `
+      <div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/9780143475927.jpg?v=1745694510" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Can We Be Strangers Again?
+      </h5>
+
+      <p class="card-text mb-1">Shrijeet Shandilya</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal6">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal6" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Can We Be Strangers Again?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Author:</strong> Shrijeet Shandilya</p>
+<p>This contemporary coming-of-age young adult fiction explores three college friends as they navigate loyalty, love, and the messy work of growing up. Its central theme is how friendship and romance collide under pressure, reshaping what we thought we knew about trust. It speaks to readers in their late teens and early twenties who remember that tender, uncertain time—and to anyone drawn to emotionally honest, hopeful storytelling.
+
+The story is presented in a warm, intimate voice that dwells on small moments—a late-night chat, a shared joke, a look that says more than words. With a story-led, character-driven approach set against a vivid campus backdrop, the chapters move at the pace of a long, thoughtful night, inviting readers to step into the rhythms of college life and the weight of unspoken tension.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/products/hachette-uk-books-default-title-twisted-love-paperback-huang-ana-40359373734105.jpg?v=1746656407" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Twisted Love
+      </h5>
+
+      <p class="card-text mb-1">Ana Huang</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal7">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal7" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Twisted Love</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <p><strong>Author:</strong> Ana Huang</p>
+<p> Adult contemporary romance with suspense, centered on a brother’s best friend dynamic. A guarded, ice-cold hero and a warm, hopeful heroine confront desire, danger, and secrets that could reshape their lives. Ideal for mature readers who crave steamy tension, emotional depth, and a redemption arc that proves trust can heal a guarded heart.
+
+Presented through dual perspectives, the narrative moves between the hero’s cool exterior and the heroine’s bright spirit, keeping pace fast and page-turning. The story weaves sharp banter with intimate moments, balancing romance with suspense into a gripping journey.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-kunex-it-ends-with-us-sometimes-the-one-who-loves-you-is-the-one-who-hurts-you-the-most-colleen-hoover-40434941362393.jpg?v=1745693570" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        It Ends With Us
+      </h5>
+
+      <p class="card-text mb-1">Colleen Hoover</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal8">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal8" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">It Ends With Us </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        <p><strong>Author:</strong> Collen Hoover</p>
+<p>This is a contemporary romance for adult readers, told in an intimate present-tense voice. It follows a woman building a life in Boston while navigating a deeply complicated romance, with memories of a first love surfacing along the way. The central themes are love, boundaries, healing, and the courage to shape a future that reflects the truth of who you are. Thoughtful readers who crave character-driven fiction will find warmth, realism, and a hopeful heart at the center of this story.
+
+Storytelling is intimate and reflective, weaving present-day decisions with flashbacks to the past. The pacing stays steady, balancing quiet moments of hope with heart-wrenching revelations, while maintaining warmth and humanity. The movie tie-in paperback edition brings this vivid storytelling to life with accessible prose and a rhythm that mirrors real life—small triumphs, quiet heartbreak, and hard-won growth.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+      `;
+    }
+
+    if (genre === "horror") {
+       section.style.background = "linear-gradient(to right, lightgray, #434343)";
+      title.innerText = "Horror Books";
+      container.innerHTML = `
+             <div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/hachette-uk-books-default-title-verity-paperback-hoover-colleen-paperback-hoover-colleen-40372235796697.webp?v=1745708852" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Verity
+      </h5>
+
+      <p class="card-text mb-1">Collen Hoover</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal9">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal9" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Verity</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Author:</strong>Collen Hoover</p>
+<p>Verity is a pulse-pounding psychological thriller that follows Lowen Ashleigh, a struggling writer who is hired to finish the novels of bestselling author Verity Crawford. This gripping tale, suited for adult readers who crave twisty, morally complex stories, blends fear, desire, and deception into a fast-paced, immersive experience. The paperback edition invites you to step into a world where every choice has consequences and nothing is quite what it seems.
+
+Structured with lean, cinematic momentum, the story unfolds across two intertwined perspectives: Lowen's present-day investigation and a hidden autobiography discovered in the chaos of the author's office. The manuscript reveals dark secrets Verity never intended to share, turning each revelation into a test of trust and restraint. As Lowen weighs the risks of exposing the truth to Verity's grieving husband, the tension tightens and the moral stakes rise, pushing the boundaries between loyalty, love, and obligation. Hoover's prose is sharp, cinematic, and propulsive, delivering quick, gripping chapters and a pace that urges you to turn the page.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/the-housemaid-is-watching-paperback-mcfadden-freida-bk0508866-42691340763353.jpg?v=1746613903" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        The Housemaid Is Watching
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal10">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal10" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Housemaid Is Watching</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <p><strong>Author:</strong> Freida Mcfadden</p>
+<p>The Housemaid Is Watching is the third installment in Freida McFadden's addictive Housemaid series, a suspenseful thriller about a fresh start that quickly grows unsettling. It follows a caregiver-turned-new homeowner on a quiet cul-de-sac, where a beautiful kitchen and space for kids promise a dream—until secrets begin to creep in. Written for adult readers who relish twist-filled suspense, psychological tension, and high-stakes family drama, this book carries a tense, edge-of-your-seat energy from start to finish.
+
+The narrative unfolds in lean, fast-paced chapters that pull you deeper into the protagonist's new life and the creeping sense that something is wrong. The Lowells' house, the icy housemaid, and a neighbor named Mrs. Lowell create a palpable atmosphere of unease as the line between safety and threat blurs. As the mystery deepens, the story examines how far a family will go to protect what matters, with each late-night exchange and shadowy figure heightening the stakes. The Housemaid Is Watching is crafted to be a standalone read yet it leaves readers eager for more, delivering twists and a fearsomely memorable sense of foreboding that lingers long after you finish.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/how-to-kill-men-and-get-away-with-it-a-deliciously-dark-hilariously-addictive-debut-psychological-thriller-about-friendship-love-and-murder-for-2022-paperback-brent-katy-bk0478295-40660347814105.jpg?v=1748608895" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      How To Kill Men And Get Away With It
+      </h5>
+
+      <p class="card-text mb-1">CKaty Brent</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal11">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal11" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">How To Kill Men And Get Away With It</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        <p><strong>Author:</strong> Katy Brent</p>
+<p> How To Kill Men And Get Away With It is a wickedly clever psychological thriller told in the razor-sharp voice of Kitty Collins. This darkly funny novel follows a woman who turns an unwanted advance into a dangerous game of revenge, exploring friendship, love, and the moral gray areas we all pretend to ignore. Perfect for adults who love biting satire, twisty plots, and fearless heroines, this fast-moving page-turner will pull you in from the first page and keep you up late reading.
+
+Written in Kitty’s intimate, unapologetic narration, this book unfolds as a series of shocks and keen observations, delivering breakneck pacing and sharp character work. How To Kill Men And Get Away With It invites you to spend time with a morally gray world where wit, charm, and danger collide. The structure feels like a perfectly calibrated ride—short chapters, rapid reversals, and a rhythm that propels you forward while you question every impulse along the way. The experience is heightened by dark humor and a fearless exploration of power, gender dynamics, and the price of revenge.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+      `;
+    }
+
+    if (genre === "crime") {
+       section.style.background = "linear-gradient(to right,#BADFDB, #BADFDB)";
+      title.innerText = "Crime Books";
+      container.innerHTML = `
+       <div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/the-crash-bk0516992-44153244516569.jpg?v=1746622033" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       The Crash
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal12">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal12" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Crash</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Author:</strong>Freida Mcfadden</p>
+<p>The Crash is a chilling snowbound thriller about Tegan, eight months pregnant, who seeks refuge as her life unravels. Set in remote Maine, this tense story blends psychological suspense with survival realism, crafted for adults who crave edge-of-seat twists and heart-pounding danger. The tone is urgent, intimate, and atmospheric—perfect for readers who love a gripping, twist-filled ride that tests trust and courage at every turn.
+
+In The Crash, Freida McFadden structures the narrative with tight, cinematic pacing that drops you into the storm alongside its protagonist. The book unfolds like a pulse-quickening drive into a blizzard, a tentative refuge inside a warmly deceptive cabin, and an escalating web of peril that hides in plain sight. Its strength lies in mood, setting, and character dynamics that create claustrophobic tension without heavy exposition, making the experience deeply immersive. </p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/products/penguin-books-ltd-books-default-title-one-of-us-is-lying-paperback-karen-mcmanus-40477487988953.jpg?v=1746656542" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        One Of Us Is Lying
+      </h5>
+
+      <p class="card-text mb-1">Karen Mcmanus</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal13">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal13" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">TOne Of Us Is Lying</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <p><strong>Author:</strong> Karen Mcmanus</p>
+<p>One Of Us Is Lying is a bestselling young adult thriller that plunges readers into a high school mystery where detention becomes dangerous. In a single moment, four students—Bronwyn, Cooper, Nate, and Addy—find themselves suspects when the school’s gossip app creator, Simon, is found dead. This gripping, twist-filled tale is perfect for teens and adult readers who crave propulsive suspense, sharp dialogue, and a look at how secrets can change everything. The tone is tense, clever, and endlessly engaging, making One Of Us Is Lying a must-read for mystery lovers and fans of high school drama alike.
+
+The story unfolds with brisk, multi-voiced narration that pulls you into the four students’ perspectives and the web of secrets surrounding them. Written in a contemporary, accessible style, the book moves at a relentless pace with short chapters and cliffhangers that urge you to read just one more page. Whether you’re drawn to clever twists, character-driven tension, or the adrenaline rush of a whodunit, One Of Us Is Lying delivers a compelling ride from start to finish. As the truth begins to surface, the book invites you to question what you think you know about each character—and about yourself—without revealing too much too soon.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/files/71iqxQ9ocWL._SL1500_32a0e5fd-382c-48ca-8bd7-c167cba985f2.jpg?v=1769768169" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Boyfriend
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal14">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal14" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Boyfriend</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        <p><strong>Author:</strong> Freida Mcfadden</p>
+<p>This is a contemporary romance fiction for adults, centered on love, trust, and betrayal. The story reveals how appearances can mask deep secrets, and how circumstances shape what people choose to believe about each other. The intended reader is adults who enjoy emotionally charged relationship drama and reflective, character-driven storytelling. The tone is moody, intimate, and thought-provoking.
+
+Presented as a story-led narrative, the book follows a couple through a modern landscape of love and uncertainty. Each chapter introduces a new twist that challenges loyalties and forces difficult choices, drawing readers deeper into the emotional truth of the relationship.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+        </div>
+    </div>
+  </div>
+</div>
+      `;
+    }
+
+    if (genre === "classics") {
+      section.style.background = "linear-gradient(to right, #fff3cd, #fff8e1)";
+      title.innerText = "Classic Books";
+      container.innerHTML = `
+       <div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/products/penguin-random-house-india-books-default-title-the-secret-garden-premium-paperback-penguin-india-paperback-frances-burnett-paperback-frances-burnett-40372754972889.jpg?v=1760793250" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       The Secret Garden
+      </h5>
+
+      <p class="card-text mb-1">Frances H. Burnett</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal15">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal15" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Secret Garden</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p><strong>Author:</strong> Frances H. Burnett</p>
+<p>Step into the enchanting world of The Secret Garden, a timeless classic by Frances Eliza Hodgson Burnett. This novel follows Mary Lennox, a spirited orphan who is sent to live at Misselthwaite Manor, a grand estate veiled in secrets. A coming-of-age tale for readers of all ages, it blends adventure with warmth and offers a gentle invitation to believe in resilience, friendship, and the magic of renewal.
+
+In elegant, accessible prose, The Secret Garden unfolds through Mary’s curious discoveries, the stern Mr. Craven, the kindly gardener Dickon, and the quiet strength of Colin. The garden itself acts as a character—a locked, hidden world that blooms anew as friends tend it, learn its rhythms, and uncover secrets long kept behind the manor’s ivy. The book’s pace invites gentle reading sessions and rewards steady curiosity with emotional growth, moments of quiet humor, and a hopeful, restorative arc.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src=https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-the-definitive-charles-dickens-charles-dickens-40421732417753.jpg?v=1745723593" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Definitive Charles Dickens
+      </h5>
+
+      <p class="card-text mb-1">Charles Dickens
+
+</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal16">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal16" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Definitive Charles Dickens</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         <p><strong>Author:</strong> Charles Dickens</p>
+<p>The Definitive Charles Dickens is an inviting paperback anthology that gathers the Victorian master’s most enduring works for adults and older teens curious about classic literature and social history. You’ll encounter the sweeping ambition of Great Expectations, the intimate world of Letters to Friends and Family, the dramatic tension of Is She His Wife, the linked tales of Master Humphrey’s Clock, and the suspense of The Trial for Murder, all within a single, accessible volume. This collection offers thoughtful, hopeful, and educational storytelling, inviting readers to discover Dickens’s humanity and moral imagination.
+
+Structured as a curated journey through Dickens’s varied confidences—novels, drama, connected stories, and personal letters—the book moves at a welcoming pace, letting you savor vivid characters, atmospheric settings, and sharp social observations. The experience is enhanced by a seamless flow between formats, so you can bounce from a sweeping narrative to a brisk short piece and back again with ease. The prose remains inviting, balancing wit and empathy to illuminate life in a period of striking inequality.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="col-md-4">
+  <div class="card h-100" style="width: 18rem;">
+    <img src="https://www.crossword.in/cdn/shop/products/penguin-random-house-india-books-default-title-wonderful-wizard-of-oz-paperback-l-frank-baum-40372769521881.jpg?v=1760804092" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     The Wizard Of Oz
+
+      </h5>
+
+      <p class="card-text mb-1">L. Frank Baum</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal17">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal17" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">The Wizard Of Oz
+</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+        <p><strong>Author:</strong> L. Frank Baum</p>
+<p>Step into the enchanting world of Oz with The Wizard Of Oz, a timeless classic by Frank L. Baum. This enduring fantasy follows Dorothy and her loyal dog Toto as a whirlwind carries them to a magical land where rules bend and dreams feel possible. Written for readers of all ages who crave adventure, friendship, and a gentle courage, this story carries a warm, hopeful tone that invites both young explorers and nostalgic grownups to believe in big dreams and brighter hearts.
+
+In this beloved tale, the narrative unfolds along the famous yellow brick road, pairing brisk, character-driven storytelling with a richly imagined setting. Dorothy joins forces with a Scarecrow who longs for a brain, a Tin Woodman seeking a heart, and a Cowardly Lion who yearns for courage, as they travel through curious towns and puzzling landscapes while avoiding danger and the Wicked Witch’s shadow. This is The Wizard Of Oz, a story that has delighted generations with its courage and charm.</p></div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+        </div>
+    </div>
+  </div>
+</div>
+      `;
+    }
+  }
+</script>
+<!-- <div class="qoute" style="width:auto; height:150px; background-color: #DA6C6C; margin-bottom: 10px; border-radius: 10px; margin-top:40px; display: flex; justify-content: center; align-items: center; margin: auto;" >
+
+</div> -->
+<div class="hero-section">
+  <div class="hero-content">
+   <h5>Where stories breathe between ink and imagination,<br>
+each page unfolding a quiet kind of magic.<br>
+Lose yourself in words that linger like dreams,<br>
+and find pieces of yourself in every story.</h5>
+  </div>
+</div>
+</div>
+ <footer class="foot">
+  <div class="footer-content">
+    
+    <div class="footer-brand">
+      <h3>BookVerse</h3>
+      <p>A thoughtfully curated space where stories, authors, and imagination come together.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow Us</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    © 2026 BookVerse. All rights reserved.
+  </div>
+</footer>
+
+</body>
+
+</html>
