@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crime</title>
+     <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        #container{
+            width:1350px;
+            height:auto;
+            margin: auto;
+        }
+        .Box{
+            background-color:#ffdd00;
+            width: auto;
+            height: 180px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .Box h2{
+             line-height: 180px;
+             font-weight: 700;
+        }
+    </style>
+</head>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl, {
+        container: 'body'
+      });
+    });
+  });
+</script>
+<body>
+    <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-dark"
+     href="Bookstore.html"
+     id="bookstoreDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Bookstore
+  </a>
+
+  <ul class="dropdown-menu shadow-lg border-0 mt-2" aria-labelledby="bookstoreDropdown">
+    <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+    <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+    <li><a class="dropdown-item" href="Classic.html">Classic</a></li>
+    <li><a class="dropdown-item" href="Romcom.html">Rom-Com</a></li>
+    <li><a class="dropdown-item" href="Mystery.html">Mystery</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+    <div id="container">
+        <div class="Box">
+<h2>Crime Books</h2>
+        </div>
+        <div class="section">
+          <div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/the-crash-bk0516992-44153244516569.jpg?v=1746622033" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       The Crash
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal12">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal12" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Crash</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+            Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+                The Crash is a chilling snowbound thriller about Tegan, eight months pregnant, who seeks refuge as her life unravels. Set in remote Maine, this tense story blends psychological suspense with survival realism, crafted for adults who crave edge-of-seat twists and heart-pounding danger. The tone is urgent, intimate, and atmospheric—perfect for readers who love a gripping, twist-filled ride that tests trust and courage at every turn.
+
+In The Crash, Freida McFadden structures the narrative with tight, cinematic pacing that drops you into the storm alongside its protagonist. The book unfolds like a pulse-quickening drive into a blizzard, a tentative refuge inside a warmly deceptive cabin, and an escalating web of peril that hides in plain sight. Its strength lies in mood, setting, and character dynamics that create claustrophobic tension without heavy exposition, making the experience deeply immersive.
+          </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Motherhood Struggles</span>
+              <span class="badge rounded-pill">Survival Journey
+
+</span>
+              <span class="badge rounded-pill">
+Suspenseful Narrative</span>
+              <span class="badge rounded-pill">
+Unexpected Twists</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                  <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/penguin-books-ltd-books-default-title-one-of-us-is-lying-paperback-karen-mcmanus-40477487988953.jpg?v=1746656542" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        One Of Us Is Lying
+      </h5>
+
+      <p class="card-text mb-1">Karen Mcmanus</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal13">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal13" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">One Of Us Is Lying </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+          Karen Mcmanus
+
+
+              </a>
+            </p>
+
+            <p class="book-desc">
+                One Of Us Is Lying is a bestselling young adult thriller that plunges readers into a high school mystery where detention becomes dangerous. In a single moment, four students—Bronwyn, Cooper, Nate, and Addy—find themselves suspects when the school’s gossip app creator, Simon, is found dead. This gripping, twist-filled tale is perfect for teens and adult readers who crave propulsive suspense, sharp dialogue, and a look at how secrets can change everything. The tone is tense, clever, and endlessly engaging, making One Of Us Is Lying a must-read for mystery lovers and fans of high school drama alike.
+
+The story unfolds with brisk, multi-voiced narration that pulls you into the four students’ perspectives and the web of secrets surrounding them. Written in a contemporary, accessible style, the book moves at a relentless pace with short chapters and cliffhangers that urge you to read just one more page. Whether you’re drawn to clever twists, character-driven tension, or the adrenaline rush of a whodunit.
+          </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">High School Mystery</span>
+              <span class="badge rounded-pill">Teen Thriller
+
+</span>
+              <span class="badge rounded-pill">Suspenseful Secrets</span>
+              <span class="badge rounded-pill">Whodunit Drama</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">200</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">14 years and Above</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                  <tr><td>Price</td><td class="fw-semibold">459/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/71iqxQ9ocWL._SL1500_32a0e5fd-382c-48ca-8bd7-c167cba985f2.jpg?v=1769768169" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Boyfriend
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal14">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal14" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Boyfriend</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+This is a contemporary romance fiction for adults, centered on love, trust, and betrayal. The story reveals how appearances can mask deep secrets, and how circumstances shape what people choose to believe about each other. The intended reader is adults who enjoy emotionally charged relationship drama and reflective, character-driven storytelling. The tone is moody, intimate, and thought-provoking.
+
+Presented as a story-led narrative, the book follows a couple through a modern landscape of love and uncertainty. Each chapter introduces a new twist that challenges loyalties and forces difficult choices, drawing readers deeper into the emotional truth of the relationship.
+          </p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Modern Dating</span>
+              <span class="badge rounded-pill">New York City</span>
+              <span class="badge rounded-pill">Murder Mystery</span>
+              <span class="badge rounded-pill">Obsession And Love</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">450/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/crosswordonline-books-default-title-the-family-upstairs-paperback-jewell-lisa-40471520837849.jpg?v=1745712352" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Family Upstairs
+      </h5>
+
+      <p class="card-text mb-1">Lisa Jewell</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+       
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal18">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal18" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Family Upstairs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Lisa Jewell
+              </a>
+            </p>
+
+            <p class="book-desc">
+The Family Upstairs is a gripping, atmospheric mystery set in the elegant and eerie streets of London’s Chelsea. Written for adult readers who love twisty family dramas and immersive thrillers, this novel follows Libby Jones as she learns, on her twenty-fifth birthday, that she may be the sole heir to a sprawling mansion—and the dangerous secrets that inheritance awakens.
+
+The Family Upstairs unfolds in tightly wound timelines, moving between Libby's present-day discoveries and a haunting past at 16 Cheyne Walk. The Chelsea mansion becomes a character in its own right, and three families are bound to its walls by secrets kept for decades. The writing blends sharp plotting with mood-driven prose, drawing you deeper into a web of motive, fear, and desire as each chapter teases another truth.
+          </p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Inheritance Intrigue
+
+</span>
+              <span class="badge rounded-pill">Crime Fiction
+</span>
+              <span class="badge rounded-pill">London Suspense</span>
+              <span class="badge rounded-pill">
+Family Secrets</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">480</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/61rmOLsdBiL._SL1000_989f9ac2-de34-4511-8c8c-392c9c3e221c.jpg?v=1769760803" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     The Silent Patient
+      </h5>
+
+      <p class="card-text mb-1">Alex Michaelides</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal19">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal19" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Silent Patient</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+            Alex Michaelides
+              </a>
+            </p>
+
+            <p class="book-desc">
+The Record-Breaking, Multimillion Copy Global Bestseller And Tiktok Sensation -Discover The #1 New York Times And Sunday Times Bestselling Thriller With A Jaw-Dropping Twist That Everyone Is Talking About - As Seen On Tiktok. Soon To Be A Major Film.Alicia Berenson Lived A Seemingly Perfect Life Until One Day Six Years Ago.When She Shot Her Husband In The Head Five Times.Since Then She Hasnt Spoken A Single Word.Its Time To Find Out Why.          </p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">
+Suspenseful Mystery
+</span>
+              <span class="badge rounded-pill">Character Study
+</span>
+              <span class="badge rounded-pill">Plot Twists</span>
+              <span class="badge rounded-pill">Psychological mystery</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">352</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">699/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/crossword-in-books-default-title-then-she-was-gone-paperback-unknown-40493858291929.jpg?v=1745712562" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      Then She Was Gone
+      </h5>
+
+      <p class="card-text mb-1">
+Lisa Jewell
+
+</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+       
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal20">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal20" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Then She Was Gone</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+Lisa Jewell
+
+
+              </a>
+            </p>
+
+            <p class="book-desc">
+              Then She Was Gone is a gripping psychological thriller about a mother’s decade-long search for truth after her daughter vanishes. This darkly emotional mystery invites adult readers who love suspense with heart, blending grief, resilience, and a quest for answers into a page-turning experience.
+
+Written with a deft, warm touch, Then She Was Gone follows Laurel Mack as she tries to piece her life back together after Ellie’s disappearance. A chance encounter in a café pulls Laurel into a new connection that unsettles the quiet of her days and stirs long-buried questions. The narrative moves between the present and the years that followed Ellie’s vanishing, weaving memories with new discoveries at a steady, immersive pace. The book feels intimate, with vivid settings, believable characters, and a storytelling rhythm that keeps you turning pages as you weigh what trust really means when the truth might still be out there.
+</p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Family Drama
+</span>
+              <span class="badge rounded-pill">Loss And Grief
+</span>
+              <span class="badge rounded-pill">Murder Mystery</span>
+              <span class="badge rounded-pill">Search For Truth</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/lisa-jewell-none-of-this-is-true-jewell-lisa-bk0487617-42391597842649.jpg?v=1746629678" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     None Of This Is True
+      </h5>
+
+      <p class="card-text mb-1">Lisa Jewell</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal21">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal21" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">None Of This Is True</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+          Lisa Jewell
+              </a>
+            </p>
+
+            <p class="book-desc">
+On her 45th birthday, podcaster Alix Summer meets Josie Fair, an unassuming woman who is also marking a milestone. None Of This Is True follows Alix as she invites Josie to be a subject on her podcast, only to uncover a life filled with dark secrets and hidden dangers. This is a gripping psychological thriller for adult readers who love twisty, edge-of-your-seat suspense, delivered in a tense, addictive, and unsettled tone.
+
+Written with propulsive clarity, None Of This Is True unfolds in sharp, contemporary prose and lean, momentum-building chapters. The story moves between Alix’s podcast world and Josie’s shadowy past, creating a layered narrative where every revelation raises new questions. The experience is immersive: concise pacing, clever misdirections, and a narrative that invites you to play along—checking motives, re-evaluating what you think you know, and staying one step ahead of the twists.
+
+
+          </p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Psychological Thriller</span>
+              <span class="badge rounded-pill">Dark Secrets
+</span>
+              <span class="badge rounded-pill">
+Unreliable Narrator</span>
+              <span class="badge rounded-pill">Twisted Friendships</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">599/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/wrong-place-wrong-time-bk0474341-44373751464153.jpg?v=1746630044" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      Wrong Place Wrong Time
+      </h5>
+
+      <p class="card-text mb-1">Gillian Mcallister
+
+</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal22">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal22" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Wrong Place Wrong Time</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+            Gillian Mcallister
+
+
+              </a>
+            </p>
+
+            <p class="book-desc">
+Wrong Place Wrong Time is a gripping time-bending psychological thriller about a mother's unwavering love and the desperate choices it spurs. In this suspenseful novel, a mother wakes to find her son at the center of a crime—and then relives the days leading up to that moment, trying to alter the outcome. Designed for adult readers who adore twisty plots, morally fraught dilemmas, and heart-pounding suspense, the book carries a fierce emotional energy that stays with you long after the last page.
+
+The book unfolds in tight, propulsive chapters that chase the clock and pull the reader deeper into the mystery. Written in a clear, immersive voice, it builds a time-loop premise that feels both intimate and expansive, letting you see the consequences of every choice from multiple angles. The experience is heightened by sharply drawn characters and a plot that unfolds with cunning twists, keeping you engaged without overwhelming you with exposition.
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Psychological Thriller</span>
+              <span class="badge rounded-pill">Time Travel Suspense</span>
+              <span class="badge rounded-pill">Mother-Son Relationship</span>
+              <span class="badge rounded-pill">
+Moral Dilemmas</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/the-teacher-paperback-freida-mcfadden-bk0506067-42462783176921.jpg?v=1746607004" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Teacher
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal23">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal23" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Teacher</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+The Teacher is a gripping psychological thriller that dives into trust, betrayal, and hidden secrets at a high school. From bestselling author Freida McFadden, it follows Eve, a devoted math teacher whose orderly life is upended when rumors of a student‑teacher affair surface. For readers who crave twisty suspense and morally complex characters, The Teacher offers a tense, edge‑of‑your‑seat reading experience.
+
+The Teacher is written in a tight, propulsive voice that pulls you into Eve’s perspective as she questions what happened. The narrative unfolds with careful pacing, sharp dialogue, and twists that come with escalating stakes. The experience is immersive—short chapters, mounting tension, and revelations that unfold without tipping into melodrama.
+          </p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Trust And Betrayal</span>
+              <span class="badge rounded-pill">Dark Secrets</span>
+              <span class="badge rounded-pill">Suspenseful Mystery</span>
+              <span class="badge rounded-pill">Student-Teacher Affair</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

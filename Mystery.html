@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery</title>
+     <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        #container{
+            width:1350px;
+            height:auto;
+            margin: auto;
+        }
+        .Box{
+            background-color:#ffdd00;
+            width: auto;
+            height: 180px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .Box h2{
+             line-height: 180px;
+             font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl, {
+        container: 'body'
+      });
+    });
+  });
+</script>
+    <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-dark"
+     href="Bookstore.html"
+     id="bookstoreDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Bookstore
+  </a>
+
+  <ul class="dropdown-menu shadow-lg border-0 mt-2" aria-labelledby="bookstoreDropdown">
+    <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+    <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+    <li><a class="dropdown-item" href="Classic.html">Classic</a></li>
+    <li><a class="dropdown-item" href="Romcom.html">Rom-Com</a></li>
+    <li><a class="dropdown-item" href="Mystery.html">Mystery</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+    <div id="container">
+        <div class="Box">
+<h2>Mystery Books</h2>
+        </div>
+        <div class="section">
+          <div class="card book-card">
+
+  <img src="https://www.crossword.in/cdn/shop/files/a-good-girls-guide-to-murder-bk0449991-40497325801689.jpg?v=1746628950" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">A Good Girls Guide To Murder</h5>
+
+    <p class="card-text mb-1">
+     Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal3">
+       View more
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="bookModal3" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">A Good Girl’s Guide to Murder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+                Holly Jackson
+              </a>
+            </p>
+
+            <p class="book-desc">
+           A Good Girls Guide To Murder is a YA crime thriller that follows Pip as she investigates a five-year-old murder in a close-knit town. Part mystery, part social realism, this book is written for teens and young adults who crave clever puzzles, sharp wit, and suspense that keeps you up at night. The tone blends tense, page-turning drama with dark humor and a sense of purpose that will resonate with readers who want truth and justice, not just answers.
+
+In A Good Girls Guide To Murder, the story unfolds through an innovative blend of interviews, logs, and murder maps, letting you hear Pip's voice as she gathers clues, questions the town’s narratives, and pieces together a case that refuses to stay closed. The experience is immersive and uniquely engaging, inviting you to follow along as Pip weighs motives, tests evidence, and learns how bias, privilege, and fear can shape what a community chooses to believe. The pace is gripping, the humor is sly, and the stakes feel personal as the investigation digs ever deeper into secrets that have long been burie
+            </p>
+
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">YA Thriller</span>
+              <span class="badge rounded-pill">Crime</span>
+              <span class="badge rounded-pill">Cold Case Mystery
+
+</span>
+              <span class="badge rounded-pill">Investigation</span>
+              <span class="badge rounded-pill">Dark Humour</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Series</td><td class="fw-semibold">Yes</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">Teen</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Pages</td><td class="fw-semibold">432</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+        
+<div class="card book-card">
+
+  <img src="https://www.crossword.in/cdn/shop/products/as-good-as-dead-bk0444427-40532738212057.jpg?v=1746656549" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">As Good As Dead</h5>
+
+    <p class="card-text mb-1">
+     Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal4">
+       View more
+    </a>
+  </div>
+</div>
+<div class="modal fade" id="bookModal4" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">As Good As Dead</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+                Holly Jackson
+              </a>
+            </p>
+
+            <p class="book-desc">
+           As Good As Dead is the thrilling conclusion to the bestselling A Good Girl's Guide to Murder series. In this high-stakes YA mystery thriller, Pip Fitz-Amobi heads to college under the weight of online threats and a chilling message: "Who will look for you when you're the one who disappears?" Perfect for teen and adult readers who crave clever plotting, gutsy protagonists, and edge-of-your-seat suspense, this final installment delivers a tense, emotional ride that lingers long after the last page.
+
+Written in a lean, immersive voice, As Good As Dead unfolds through Pip's determined perspective as she navigates a new campus, old secrets, and a growing web of danger. The book is structured to tighten the suspense with brisk chapters, sharp deductions, and moments of quiet reflection that reveal Pip's resilience. The experience is immersive and cinematic—pulsing with twists, evocative settings, and a relentless pursuit of truth that makes the reader feel every step Pip takes.</p>
+
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">College Thriller</span>
+              <span class="badge rounded-pill">True Crime</span>
+              <span class="badge rounded-pill">Serial Killer Investigation</span>
+              <span class="badge rounded-pill">Haunting Narrative</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">576</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">14 Above and All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+      
+
+<div class="card book-card">
+
+  <img src="https://www.crossword.in/cdn/shop/products/egmont-1-april-2018-books-default-title-shatter-me-shatter-me-paperback-tahereh-mafi-40434653593817.jpg?v=1746656269" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">Shatter Me</h5>
+
+    <p class="card-text mb-1">
+    Taberah Mahi
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <small class="text-muted">(4)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal5">
+       View more
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="bookModal5" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Shatter Me</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+               Taberah Mahi
+              </a>
+            </p>
+
+            <p class="book-desc">
+           Shatter Me, Tahereh Mafi's gripping dystopian novel in paperback, follows Juliette Ferrars, a 17-year-old girl with a deadly touch, as she is confined by The Reestablishment and forced to navigate a crumbling world. Part thriller, part romance, this YA tale is perfect for readers who crave fast-paced suspense, emotional depth, and a heroine who discovers her power. The tone is urgent, intimate, and hopeful as Juliette questions who she is and what she’s willing to fight for.
+
+Shatter Me is written in Juliette's intimate, first-person perspective, with lean, propulsive chapters and a lyrical, emotionally charged voice. The formatting mirrors her inner voice at pivotal moments, creating a distinctive reading rhythm that heightens tension. </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Supernatural Abilities</span>
+              <span class="badge rounded-pill">Dystopian Society</span>
+              <span class="badge rounded-pill">Romantic Tension</span>
+              <span class="badge rounded-pill">Emotional Journey</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">336</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">14 Above and All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+  <img src="https://www.crossword.in/cdn/shop/files/the-reappearance-of-rachel-price-paperback-february-27-2025-by-holly-jackson-author-bk0501377-41864499953881.jpg?v=1746614398" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">The Reappearance Of Rachel Price</h5>
+
+    <p class="card-text mb-1">
+Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <small class="text-muted">(4)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal40">
+       View more
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="bookModal40" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Reappearance Of Rachel Price</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+            Holly Jackson
+              </a>
+            </p>
+
+            <p class="book-desc">
+              The Reappearance Of Rachel Price is an exhilarating young adult thriller that pulls you into a mystery of disappearance and reunion. A standalone novel from Holly Jackson, the author behind A Good Girl’s Guide to Murder, this book is perfect for teens and readers who crave twisty suspense and a page-turning ride. It follows 18-year-old Bel, who has spent sixteen years wondering what happened to her mother, Rachel Price. When her family agrees to participate in a true crime documentary, Bel is pulled back into the case—and then Rachel’s sudden reappearance turns her world upside down. The tone is tense, gripping, and emotionally charged, offering both heart-stopping suspense and a deeper exploration of memory and truth.
+            </p>           
+             <div class="keywords mt-3">
+              <span class="badge rounded-pill">Young Adult Mystery</span>
+              <span class="badge rounded-pill">Thriller Fiction</span>
+              <span class="badge rounded-pill">Family Secrets
+</span>
+              <span class="badge rounded-pill">Disappearance Investigation</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">448</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">Teen</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+  <img src="https://www.crossword.in/cdn/shop/files/crosswordonline-books-default-title-five-survive-paperback-jackson-holly-40476068774105.jpg?v=1746656395" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">Five Survive</h5>
+
+    <p class="card-text mb-1">
+  Holly Jackson
+    </p>
+
+    <!-- Rating -->
+    <div class="mb-2 text-warning">
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+      <i class="bi bi-star-fill"></i>
+       <i class="bi bi-star-half"></i>
+      <small class="text-muted">(4.5)</small>
+    </div>
+
+    <a href="#"
+       class="btn btn-warning"
+       data-bs-toggle="modal"
+       data-bs-target="#bookModal41">
+       View more
+    </a>
+  </div>
+</div>
+
+<div class="modal fade" id="bookModal41" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Five Survive</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+               Holly Jackson
+              </a>
+            </p>
+
+            <p class="book-desc">
+Five Survive follows eighteen-year-old Red and her friends as their Spring Break road trip turns from sunny escape to dangerous ground. This standalone YA crime thriller blends adrenaline-fueled suspense with sharp, honest explorations of friendship under pressure, crafted for readers who crave mystery, danger, and coming-of-age grit. The tone is taut, brave, and emotionally aware—an edge-of-your-seat ride that matters as much as the night is long.
+
+Written with lean, propulsive prose, Five Survive tightens the screws as an RV breaks down in a desolate stretch of road and a sniper closes in. The narrative unfolds as a relentless game of pursuit and secrets, pairing heart-pounding chase scenes with quiet, revealing moments that probe trust, loyalty, and what people will do to survive. If you enjoy character-driven thrillers, you’ll be drawn into Red’s perspective and the brisk pacing that keeps you turning pages without spoiling the twists.            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Ya Thriller</span>
+              <span class="badge rounded-pill">Survival Adventure</span>
+              <span class="badge rounded-pill">Teen Secrets</span>
+              <span class="badge rounded-pill">Mystery Suspense</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">Teen</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/crossword-in-books-default-title-then-she-was-gone-paperback-unknown-40493858291929.jpg?v=1745712562" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      Then She Was Gone
+      </h5>
+
+      <p class="card-text mb-1">
+Lisa Jewell
+
+</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+       
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal20">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal20" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Then She Was Gone</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+Lisa Jewell
+
+
+              </a>
+            </p>
+
+            <p class="book-desc">
+              Then She Was Gone is a gripping psychological thriller about a mother’s decade-long search for truth after her daughter vanishes. This darkly emotional mystery invites adult readers who love suspense with heart, blending grief, resilience, and a quest for answers into a page-turning experience.
+
+Written with a deft, warm touch, Then She Was Gone follows Laurel Mack as she tries to piece her life back together after Ellie’s disappearance. A chance encounter in a café pulls Laurel into a new connection that unsettles the quiet of her days and stirs long-buried questions. The narrative moves between the present and the years that followed Ellie’s vanishing, weaving memories with new discoveries at a steady, immersive pace. The book feels intimate, with vivid settings, believable characters, and a storytelling rhythm that keeps you turning pages as you weigh what trust really means when the truth might still be out there.
+</p>
+       <div class="keywords mt-3">
+              <span class="badge rounded-pill">Family Drama
+</span>
+              <span class="badge rounded-pill">Loss And Grief
+</span>
+              <span class="badge rounded-pill">Murder Mystery</span>
+              <span class="badge rounded-pill">Search For Truth</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/hachette-uk-books-default-title-verity-paperback-hoover-colleen-paperback-hoover-colleen-40372235796697.webp?v=1745708852" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Verity
+      </h5>
+
+      <p class="card-text mb-1">Collen Hoover</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal9">
+         View more
+      </a>
+    </div>
+  </div>
+          <div class="modal fade" id="bookModal9" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Verity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Collen Hoover
+              </a>
+            </p>
+
+            <p class="book-desc">
+                Verity is a pulse-pounding psychological thriller that follows Lowen Ashleigh, a struggling writer who is hired to finish the novels of bestselling author Verity Crawford. This gripping tale, suited for adult readers who crave twisty, morally complex stories, blends fear, desire, and deception into a fast-paced, immersive experience. The paperback edition invites you to step into a world where every choice has consequences and nothing is quite what it seems.
+
+Structured with lean, cinematic momentum, the story unfolds across two intertwined perspectives: Lowen's present-day investigation and a hidden autobiography discovered in the chaos of the author's office. The manuscript reveals dark secrets Verity never intended to share, turning each revelation into a test of trust and restraint. As Lowen weighs the risks of exposing the truth to Verity's grieving husband, the tension tightens and the moral stakes rise, pushing the boundaries between loyalty, love, and obligation. Hoover's prose is sharp, cinematic, and propulsive, delivering quick, gripping chapters and a pace that urges you to turn the page.
+         </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Psychological Thriller</span>
+              <span class="badge rounded-pill">Suspenseful Narrative</span>
+              <span class="badge rounded-pill">Complex Characters
+
+</span>
+              <span class="badge rounded-pill">
+Moral Dilemmas</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">336</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">17 years and above </td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">399/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

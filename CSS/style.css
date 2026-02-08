@@ -166,3 +166,188 @@ body {
 }
 
 
+/* Dropdown styling */
+.dropdown-menu {
+  border-radius: 12px;
+  padding: 10px 0;
+  min-width: 180px;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+   .nav-item{
+        margin-right: 40px
+          }
+.dropdown-item:hover {
+  background-color: #f4f1ff;
+  color: #ee4e2e;
+  padding-left: 25px;
+}
+
+/* Smooth dropdown animation */
+.dropdown-menu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Wider & smooth modal */
+.custom-modal {
+  border-radius: 16px;
+  animation: scaleFade 0.4s ease;
+}
+
+/* Modal animation */
+@keyframes scaleFade {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Description */
+.book-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Keywords badges */
+.keywords .badge {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 8px 14px;
+  margin: 4px 6px 4px 0;
+  font-size: 0.8rem;
+}
+
+/* Product details box */
+.product-box {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top:40px;
+}
+
+/* Table text */
+.product-box td:first-child {
+  color: #777;
+}
+
+/* Remove modal body scroll */
+/* .modal-body {
+  overflow: hidden;
+} */
+.author-name {
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.author-name:hover {
+  color: #ffb703;
+  text-decoration: underline;
+}
+
+/* Tooltip styling */
+.custom-tooltip {
+  --bs-tooltip-bg: #ff6363;
+  --bs-tooltip-color: #fff;
+  --bs-tooltip-font-size: 0.75rem;
+  --bs-tooltip-padding-x: 10px;
+  --bs-tooltip-padding-y: 6px;
+  border-radius: 8px;
+}
+.author-link {
+  color: #6f42c1;
+  text-decoration: none;
+  font-weight: 500;
+}
+/* .custom-tooltip {
+  --bs-tooltip-bg: #6f42c1;
+  --bs-tooltip-color: #fff;
+  font-size: 0.85rem;
+} */
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+.section{
+             display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+        }
+ 
+.book-card{
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+/* ===== Card Image ===== */
+.book-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+   border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* ===== Card Body ===== */
+.book-card .card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Title & Text ===== */
+.book-card .card-title {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.book-card .card-text {
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+}
+
+/* ===== Rating Stars ===== */
+.book-card .text-warning i {
+  font-size: 0.8rem;
+}
+
+/* ===== Button Alignment ===== */
+.book-card .btn {
+  margin-top: auto;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+}
+
+/* ===== Hover Effect (Optional but Nice) ===== */
+.book-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}

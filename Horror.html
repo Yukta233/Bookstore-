@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>horror</title>
+     <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        #container{
+            width:1350px;
+            height:auto;
+            margin: auto;
+        }
+        .Box{
+            background-color:#ffdd00;
+            width: auto;
+            height: 180px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .Box h2{
+             line-height: 180px;
+             font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl, {
+        container: 'body'
+      });
+    });
+  });
+</script>
+    <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-dark"
+     href="Bookstore.html"
+     id="bookstoreDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Bookstore
+  </a>
+
+  <ul class="dropdown-menu shadow-lg border-0 mt-2" aria-labelledby="bookstoreDropdown">
+    <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+    <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+    <li><a class="dropdown-item" href="Classic.html">Classic</a></li>
+    <li><a class="dropdown-item" href="Romcom.html">Rom-Com</a></li>
+    <li><a class="dropdown-item" href="Mystery.html">Mystery</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+    <div id="container">
+        <div class="Box">
+<h2>Horror Books</h2>
+        </div>
+        <div class="section">
+           <div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/hachette-uk-books-default-title-verity-paperback-hoover-colleen-paperback-hoover-colleen-40372235796697.webp?v=1745708852" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Verity
+      </h5>
+
+      <p class="card-text mb-1">Collen Hoover</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal9">
+         View more
+      </a>
+    </div>
+  </div>
+          <div class="modal fade" id="bookModal9" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Verity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Collen Hoover
+              </a>
+            </p>
+
+            <p class="book-desc">
+                Verity is a pulse-pounding psychological thriller that follows Lowen Ashleigh, a struggling writer who is hired to finish the novels of bestselling author Verity Crawford. This gripping tale, suited for adult readers who crave twisty, morally complex stories, blends fear, desire, and deception into a fast-paced, immersive experience. The paperback edition invites you to step into a world where every choice has consequences and nothing is quite what it seems.
+
+Structured with lean, cinematic momentum, the story unfolds across two intertwined perspectives: Lowen's present-day investigation and a hidden autobiography discovered in the chaos of the author's office. The manuscript reveals dark secrets Verity never intended to share, turning each revelation into a test of trust and restraint. As Lowen weighs the risks of exposing the truth to Verity's grieving husband, the tension tightens and the moral stakes rise, pushing the boundaries between loyalty, love, and obligation. Hoover's prose is sharp, cinematic, and propulsive, delivering quick, gripping chapters and a pace that urges you to turn the page.
+         </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Psychological Thriller</span>
+              <span class="badge rounded-pill">Suspenseful Narrative</span>
+              <span class="badge rounded-pill">Complex Characters
+
+</span>
+              <span class="badge rounded-pill">
+Moral Dilemmas</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">336</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">17 years and above </td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                 <tr><td>Price</td><td class="fw-semibold">399/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/the-housemaid-is-watching-paperback-mcfadden-freida-bk0508866-42691340763353.jpg?v=1746613903" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        The Housemaid Is Watching
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(3.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal10">
+         View more
+      </a>
+    </div>
+  </div>
+
+ <div class="modal fade" id="bookModal10" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Housemaid Is Watching</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+                The Housemaid Is Watching is the third installment in Freida McFadden's addictive Housemaid series, a suspenseful thriller about a fresh start that quickly grows unsettling. It follows a caregiver-turned-new homeowner on a quiet cul-de-sac, where a beautiful kitchen and space for kids promise a dream—until secrets begin to creep in. Written for adult readers who relish twist-filled suspense, psychological tension, and high-stakes family drama, this book carries a tense, edge-of-your-seat energy from start to finish.
+
+The narrative unfolds in lean, fast-paced chapters that pull you deeper into the protagonist's new life and the creeping sense that something is wrong. The Lowells' house, the icy housemaid, and a neighbor named Mrs. Lowell create a palpable atmosphere of unease as the line between safety and threat blurs. As the mystery deepens, the story examines how far a family will go to protect what matters, with each late-night exchange and shadowy figure heightening the stakes.
+</p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Suspense Thriller</span>
+              <span class="badge rounded-pill">Family Secrets</span>
+              <span class="badge rounded-pill">Neighborhood Intrigue
+
+</span>
+              <span class="badge rounded-pill">
+
+Psychological Tension</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/how-to-kill-men-and-get-away-with-it-a-deliciously-dark-hilariously-addictive-debut-psychological-thriller-about-friendship-love-and-murder-for-2022-paperback-brent-katy-bk0478295-40660347814105.jpg?v=1748608895" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      How To Kill Men And Get Away With It
+      </h5>
+
+      <p class="card-text mb-1">CKaty Brent</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal11">
+         View more
+      </a>
+    </div>
+  </div>
+  
+
+ <div class="modal fade" id="bookModal11" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">How To Kill Men And Get Away With It</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Katy Brent
+              </a>
+            </p>
+
+            <p class="book-desc">
+                How To Kill Men And Get Away With It is a wickedly clever psychological thriller told in the razor-sharp voice of Kitty Collins. This darkly funny novel follows a woman who turns an unwanted advance into a dangerous game of revenge, exploring friendship, love, and the moral gray areas we all pretend to ignore. Perfect for adults who love biting satire, twisty plots, and fearless heroines, this fast-moving page-turner will pull you in from the first page and keep you up late reading.
+
+Written in Kitty’s intimate, unapologetic narration, this book unfolds as a series of shocks and keen observations, delivering breakneck pacing and sharp character work. How To Kill Men And Get Away With It invites you to spend time with a morally gray world where wit, charm, and danger collide. The structure feels like a perfectly calibrated ride—short chapters, rapid reversals, and a rhythm that propels you forward while you question every impulse along the way. 
+       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Dark Humor</span>
+              <span class="badge rounded-pill">Psychological Thriller
+</span>
+              <span class="badge rounded-pill">Female Antihero</span>
+              <span class="badge rounded-pill">Revenge Narrative
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">300</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card book-card">
+
+    <img src=https://www.crossword.in/cdn/shop/files/815suZUB2qL._SL1500.webp?v=1753171846" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      The Secret Of Secrets
+      </h5>
+
+      <p class="card-text mb-1">Dan Brown</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal24">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal24" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Secret Of Secrets</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+           Dan Brown
+              </a>
+            </p>
+
+            <p class="book-desc">
+The Secret Of Secrets follows Robert Langdon as he unravels a web of history and danger across Prague, in a hardback edition that blends ancient symbols with a race against time. This Dan Brown novel, steeped in history and intellect, is best enjoyed by adult readers and fans of fast-paced mysteries who relish cerebral puzzles wrapped in a globe-trotting adventure. The tone is tense, adventurous, and deeply immersive, inviting you to think as you turn the pages and feel the pulse of a city hiding long-buried secrets.
+
+Written with brisk, cinematic prose, The Secret Of Secrets unfolds through tight chapters and vivid scenes that keep the momentum climbing. The book is structured as a tightly woven chase of clues—symbols, locations, and historical hints—that lead Langdon from university halls to Prague's stone stairways and hidden tunnels.       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Thrilling Adventure
+</span>
+              <span class="badge rounded-pill">Historical Mystery
+</span>
+              <span class="badge rounded-pill">Intellectual Puzzles
+</span>
+              <span class="badge rounded-pill">Suspenseful Narrative
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">704</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">1499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/the-housemaid-s-secret-a-totally-gripping-psychological-thriller-with-a-shocking-twist-paperback-freida-mcfadden-bk0480387-40732677472473.jpg?v=1746656276" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     The Housemaids Secret
+      </h5>
+
+      <p class="card-text mb-1"> Freida Mcfadden
+
+</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal25">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal25" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Housemaids Secret</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+Step into a world of intrigue and luxury with The Housemaid's Secret, a gripping psychological thriller about secrets kept behind gilded doors. Set in a gleaming penthouse, the story follows a new housemaid who uncovers that everything is not as it seems around Douglas Garrick and his wife, a woman who remains a mystery behind closed doors. Perfect for adult readers who love twisty suspense and character-driven drama, The Housemaid's Secret pairs glossy sophistication with unsettling danger, delivering a page-turning experience from start to finish.
+
+Written in a lean, propulsive voice, The Housemaid's Secret unfolds through the maid's perspective as she cleans, listens, and pieces together cryptic warnings about the guest bedroom. The suspense tightens as strange noises echo through the apartment, turning a chic home into a perilous maze. The storytelling blends mood, clues, and pacing in a way that invites you to follow the trail—without spoilers—toward a truth that could change everything.       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Secrets And Deception
+</span>
+              <span class="badge rounded-pill">Suspenseful Fiction
+</span>
+              <span class="badge rounded-pill">Mystery Unfolds
+</span>
+              <span class="badge rounded-pill">Intriguing Characters</span>
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">320</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/Never_Lie_A_Totally_Gripping_Thriller_with_Mind_bending_Twists.webp?v=1745712045" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     Never Lie
+      </h5>
+
+      <p class="card-text mb-1">Freida Mcfadden</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal26">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal26" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Never Lie</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+           Freida Mcfadden
+              </a>
+            </p>
+
+            <p class="book-desc">
+Never Lie, a taut psychological thriller by Freida McFadden, follows newlyweds Tricia and Ethan as they settle into a secluded manor with a dark past. Trapped by a winter storm, they uncover a chilling collection of audio transcripts from the former resident, Dr. Adrienne Hale, a psychiatrist who vanished without a trace. As the tapes unfold, secrets emerge that threaten their relationship and their safety, turning a dream home into a nightmare. Perfect for readers who crave clever twists, moody atmosphere, and rigorous psychological suspense, Never Lie invites you to question what you think you know.
+
+Written with a lean, cinematic sensibility, Never Lie unfolds through Tricia’s perspective as she uncovers the audio transcripts and watches secrets come to light. The tapes drive the investigation, the storm isolates the couple, and a suspenseful rhythm builds as each recording deepens Hale's disappearance       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Suspenseful Mystery</span>
+              <span class="badge rounded-pill">Dark Secrets
+</span>
+              <span class="badge rounded-pill">
+Human Psychology</span>
+              <span class="badge rounded-pill">
+Secluded Manor
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">336</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/71eTwnmHa3L._SL1500.jpg?v=1753365500" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+    The Thursday Murder Club
+      </h5>
+
+      <p class="card-text mb-1">Richard Osman</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal27">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal27" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Thursday Murder Club</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Richard Osman
+              </a>
+            </p>
+
+            <p class="book-desc">
+In a tranquil retirement village, a sharp-witted mystery unfolds. The Thursday Murder Club is a clever, cozy whodunit that pairs suspense with warmth as four unlikely friends—Elizabeth, Joyce, Ibrahim, and Ron—meet weekly to investigate unsolved murders. Written for adult readers who relish smart puzzles, rich character work, and a touch of humor, this book invites you to see that age can sharpen rather than dull curiosity, and friendship can become a full partnership in the hunt for the truth.
+
+When a brutal murder lands on their doorstep, our quartet dives into their first active case, in this The Thursday Murder Club mystery, using their collective wits and a lifetime of experience to challenge a clever culprit. The book unfolds in lively voices, in a setting that feels both comforting and charged with tension. The writing is brisk and accessible, with witty dialogue, deft pacing, and clues that invite readers to play along without feeling overwhelmed.       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">
+
+Suspenseful Humor</span>
+              <span class="badge rounded-pill">Cozy Mystery
+</span>
+              <span class="badge rounded-pill">Quirky Friendships
+</span>
+              <span class="badge rounded-pill">Retirement Village
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">599/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/and-then-there-were-none-the-world-s-favourite-agatha-christie-book-paperback-agatha-christie-bk0006213-40553194717401.jpg?v=1746613883" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      And Then There Were None
+      </h5>
+
+      <p class="card-text mb-1">Agatha Christie</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal28">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal28" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">And Then There Were None</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+           Agatha Christie
+              </a>
+            </p>
+
+            <p class="book-desc">
+And Then There Were None is a suspenseful classic from Agatha Christie, a masterful murder mystery set in 1939 on a remote Devon island. Ten strangers arrive at Soldier Island, only to discover their hosts are missing and a chilling voice accuses each guest of a past crime, beginning a deadly countdown. Perfect for adult mystery readers who crave intricate plots, psychological tension, and a tightly plotted whodunit, this novel’s atmosphere is eerie, claustrophobic, and utterly compelling.
+
+Structured with Christie’s signature economy, the story unfolds in short, ticking chapters that tighten the noose around the group. In And Then There Were None, ten characters—a reckless playboy, a troubled doctor, a formidable judge, a cunning detective, an unscrupulous mercenary, a God-fearing spinster, two quiet servants, a highly decorated general, and an anxious secretary—each carries a secret.       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">
+Twist Endings</span>
+              <span class="badge rounded-pill">Psychological Thriller
+</span>
+              <span class="badge rounded-pill">Character-Driven Plot</span>
+              <span class="badge rounded-pill">Classic Literature
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">256</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">17 Years and Above</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">399/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/traitors-gate-william-warwick-series-6-bk0480608-44375688380633.jpg?v=1746629989" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+     Traitors Gate
+      </h5>
+
+      <p class="card-text mb-1">Jeffrey Archer</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal29">
+         View more
+      </a>
+    </div>
+  </div>
+  
+ <div class="modal fade" id="bookModal29" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Traitors Gate</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+           Jeffrey Archer
+              </a>
+            </p>
+
+            <p class="book-desc">
+Traitors Gate is a high-stakes crime thriller that follows Chief Superintendent William Warwick and Inspector Ross Hogan as they race against time to prevent a daring Crown Jewels theft at the Tower of London. In this sixth installment, a master thief named Miles Faulkner has a dangerous edge, and an insider on the crew raises the stakes even higher. This gripping page-turner is perfect for readers who love clever plotting, precise police work, and heart-pounding suspense, delivered in a brisk, contemporary voice.
+
+Traitors Gate is written with crisp, accessible prose and tightly wound chapters that balance procedural detail with fast-moving action. The narrative unfolds through cinematic scenes that put you on the clock as the countdown to the heist accelerates.       </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Crime Thriller
+</span>
+              <span class="badge rounded-pill">Heist Fiction
+</span>
+              <span class="badge rounded-pill">Suspense Narrative</span>
+              <span class="badge rounded-pill">Complex Character
+
+</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

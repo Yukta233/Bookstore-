@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romcom</title>
+     <link rel="stylesheet" href="/CSS/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        #container{
+            width:1350px;
+            height:auto;
+            margin: auto;
+        }
+        .Box{
+            background-color:#ffdd00;
+            width: auto;
+            height: 180px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .Box h2{
+             line-height: 180px;
+             font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl, {
+        container: 'body'
+      });
+    });
+  });
+</script>
+    <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-dark"
+     href="Bookstore.html"
+     id="bookstoreDropdown"
+     role="button"
+     data-bs-toggle="dropdown"
+     aria-expanded="false">
+    Bookstore
+  </a>
+
+  <ul class="dropdown-menu shadow-lg border-0 mt-2" aria-labelledby="bookstoreDropdown">
+    <li><a class="dropdown-item" href="crime.html">Crime</a></li>
+    <li><a class="dropdown-item" href="Horror.html">Horror</a></li>
+    <li><a class="dropdown-item" href="Classic.html">Classic</a></li>
+    <li><a class="dropdown-item" href="Romcom.html">Rom-Com</a></li>
+    <li><a class="dropdown-item" href="Mystery.html">Mystery</a></li>
+  </ul>
+</li>
+
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+    <div id="container">
+        <div class="Box">
+<h2>Romcom Books</h2>
+        </div>
+        <div class="section">
+           <div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/9780143475927.jpg?v=1745694510" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Can We Be Strangers Again?
+      </h5>
+
+      <p class="card-text mb-1">Shrijeet Shandilya</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal6">
+         View more
+      </a>
+    </div>
+  </div>
+
+ <div class="modal fade" id="bookModal6" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Can We Be Strangers Again?</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Shrijeet Shandilya
+              </a>
+            </p>
+
+            <p class="book-desc">
+          This contemporary coming-of-age young adult fiction explores three college friends as they navigate loyalty, love, and the messy work of growing up. Its central theme is how friendship and romance collide under pressure, reshaping what we thought we knew about trust. It speaks to readers in their late teens and early twenties who remember that tender, uncertain time—and to anyone drawn to emotionally honest, hopeful storytelling.
+
+The story is presented in a warm, intimate voice that dwells on small moments—a late-night chat, a shared joke, a look that says more than words. With a story-led, character-driven approach set against a vivid campus backdrop, the chapters move at the pace of a long, thoughtful night, inviting readers to step into the rhythms of college life and the weight of unspoken tension.</p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">College Friendships</span>
+              <span class="badge rounded-pill">Love and betrayal</span>
+              <span class="badge rounded-pill">Heartbreak Recovery</span>
+              <span class="badge rounded-pill">Emotional Journey</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">232</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/hachette-uk-books-default-title-twisted-love-paperback-huang-ana-40359373734105.jpg?v=1746656407" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        Twisted Love
+      </h5>
+
+      <p class="card-text mb-1">Ana Huang</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal7">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal7" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Twisted Love</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+                Ana Huang
+              </a>
+            </p>
+
+            <p class="book-desc">
+            Adult contemporary romance with suspense, centered on a brother’s best friend dynamic. A guarded, ice-cold hero and a warm, hopeful heroine confront desire, danger, and secrets that could reshape their lives. Ideal for mature readers who crave steamy tension, emotional depth, and a redemption arc that proves trust can heal a guarded heart.
+
+Presented through dual perspectives, the narrative moves between the hero’s cool exterior and the heroine’s bright spirit, keeping pace fast and page-turning. The story weaves sharp banter with intimate moments, balancing romance with suspense into a gripping journey.
+            </p>
+
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Brother'S Best Friend
+
+</span>
+              <span class="badge rounded-pill">Mature Themes</span>
+              <span class="badge rounded-pill">Secrets And Passion </span>
+              <span class="badge rounded-pill">Love And Redemption</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">368</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Format</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">599/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-kunex-it-ends-with-us-sometimes-the-one-who-loves-you-is-the-one-who-hurts-you-the-most-colleen-hoover-40434941362393.jpg?v=1745693570" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+        It Ends With Us
+      </h5>
+
+      <p class="card-text mb-1">Colleen Hoover</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal8">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal8" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">It Ends With us </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Collen Hoover
+              </a>
+            </p>
+
+          It Ends With Us is a bold, emotionally charged contemporary romance by Colleen Hoover that dives into the complexity of love, resilience, and personal choice. Centered on Lily, a young woman who leaves her small-town Maine roots to forge a life in Boston, the novel blends ambition, heartache, and fierce loyalty into a story that matters to adult readers who crave depth, realism, and a journey that lingers long after the last page. This is a book for readers who want a romance that feels true to life—beautiful, painful, and ultimately transformative.
+
+The book is written from Lily’s perspective, weaving present-day choices with the memories of a first love that still echoes in her heart. The narrative moves with honesty and speed, drawing you alongside Lily as she faces a life-changing relationship with a magnetic neurosurgeon, while also revisiting the echoes of Atlas, the guardian figure from her past. </p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Complex Relationships</span>
+              <span class="badge rounded-pill">Romantic Dilemmas
+
+</span>
+              <span class="badge rounded-pill">Heartbreak Recovery</span>
+              <span class="badge rounded-pill">Heartfelt Storytelling</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">230</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All </td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/CB-Cover.jpg?v=1759319823" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       12 Years: My Messed-Up Love Story
+
+      </h5>
+
+      <p class="card-text mb-1">Chetan Bhagat</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal35">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal35" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">12 Years: My Messed-Up Love Story
+ </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Chetan Bhagat
+              </a>
+            </p>
+This contemporary romance for adults follows a 33-year-old stand-up comic and a 21-year-old rising private equity star as they navigate love across two distinct cultural worlds—Punjabi roots and a conservative Jain family. The central themes are love, timing, and choice, explored with humor, honesty, and heart. It’s written for readers who relish sharp wit, relatable longing, and the friction of cross-cultural attraction. The emotional tone is warm, confident, and hopeful, inviting you to feel the pull and the push of a connection that defies easy labels.
+
+The experience is story-driven and brisk, with alternating viewpoints that let you ride the tension between desire and responsibility. Vivid settings—from lively city streets to intimate family gatherings—and scenes on stage bring the romance to life through humor, keen observations, and crisp dialogue. The reading journey moves quickly, yet never shies away from big questions about age, reputation, and what it means to want someone who feels out of reach.
+          </p>            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Unconventional Romance
+
+</span>
+              <span class="badge rounded-pill">Age Difference Love
+
+</span>
+              <span class="badge rounded-pill">Cultural Clash Dynamics</span>
+              <span class="badge rounded-pill">Heartfelt Storytelling</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">432</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">399/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/when-i-am-with-you-bk0461286-44375816077529.jpg?v=1746621339" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       When I Am With You
+      </h5>
+
+      <p class="card-text mb-1">Durjoy Datta</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+        <small class="text-muted">(4.5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal36">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal36" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">When I Am With You </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+            Durjoy Datta
+              </a>
+            </p>
+When I Am With You follows Aishwarya, a determined twenty-eight-year-old who believes a conventional family isn’t for her and sets out to reinvent childcare for busy professional women. This contemporary romance speaks to adults who enjoy smart, funny stories about ambition, friendship, and love that arrives when you least expect it. The mood—hopeful, adventurous, and a touch rom-com—paints a vivid picture of a modern woman balancing career and the heart.
+
+Written in a warm, engaging voice, the novel threads Aishwarya’s ambitious startup journey with a web of romantic entanglements. In When I Am With You, Akshay embodies the allure of the “perfect” partner, yet he isn’t ready to share Aishwarya’s plans. Dhiren rides in on a crypto-fueled roller coaster and quickly becomes part of the nursery’s world—whether she wants it or not. With loyal friends Smriti and Vinny watching over her, and Neeraj’s hidden secrets bubbling beneath the surface, the story builds to unpredictable, heart-pounding turns
+          </p>            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Modern Romance</span>
+              <span class="badge rounded-pill">Entrepreneurial Journey
+</span>
+              <span class="badge rounded-pill">Unexpected Love
+</span>
+              <span class="badge rounded-pill">Friendship Dynamic</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">288</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All </td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">225/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/daydream-bk0510485-44375963861209.jpg?v=1746614463" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+      Daydream
+      </h5>
+
+      <p class="card-text mb-1">Hannah Grace</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal37">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal37" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Daydream </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+           Hannah Grace
+              </a>
+            </p>
+Daydream is a contemporary college novel from the #1 Sunday Times bestselling author, following two juniors as they navigate friendship, ambition, and the surprises of student life. Henry Turner, a self-proclaimed procrastinator, suddenly finds himself captain of the ice hockey team, while Halle, an introverted aspiring novelist, believes in his potential and offers a steadying hand. Written for readers 18 and up, Daydream blends humor with heartfelt insight, inviting anyone who cherishes campus stories and character-driven journeys to root for two unlikely partners on a shared path.
+
+Daydream traces a junior year turned upside down by new responsibilities, a challenging class, and moments that test trust and courage. The book unfolds through the intertwined lives of Henry and Halle, with a warm, reader-friendly voice that makes every late-night conversation feel close at hand. The experience is built on a balance of real-world pressures and small, unforgettable moments, showing how encouragement and perseverance can rewrite a semester—and a life</p>
+            <div class="keywords mt-3">
+              <span class="badge rounded-pill">College Life
+</span>
+              <span class="badge rounded-pill">Friendship Themes
+
+</span>
+              <span class="badge rounded-pill">Aspiring Authors
+</span>
+              <span class="badge rounded-pill">
+Ice Hockey</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">448</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">16 years and Above</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">499/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/book-lovers-bk0459312-44373704179929.jpg?v=1746629925" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       Book Lovers
+      </h5>
+
+      <p class="card-text mb-1">Henry Emily</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(4)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal38">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal38" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">Book Lovers </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+        Henry Emily
+              </a>
+            </p>
+
+This is a contemporary romance for adults, following a sharp-edged literary agent whose life centers on books until a month-long break in a sunlit small town shifts her perspective. The central theme is how courage, humor, and connection can spark a slow-blooming romance, inviting readers who crave witty banter, cozy small-town charm, and a hopeful, heartwarming journey.
+
+The story unfolds in crisp, modern prose that moves between the high-stakes publishing world and the sun-soaked streets of Sunshine Falls. It blends witty dialogue with tender, earned emotion, anchored by bookish locales and a cast of memorable locals that invite you to linger in bookshops, cafes, and quiet corners.
+          </p>            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Contemporary Romance</span>
+              <span class="badge rounded-pill">Enemies To Lovers
+</span>
+              <span class="badge rounded-pill">Literary Agents
+</span>
+              <span class="badge rounded-pill">Heartfelt Storytelling</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">384</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">550/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="card book-card">
+
+    <img src="https://www.crossword.in/cdn/shop/files/the-striker-bk0510595-43473898078425.jpg?v=1746617937" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+
+      <h5 class="card-title" style="font-size: 1rem; font-weight: bold;">
+       The Striker 
+      </h5>
+
+      <p class="card-text mb-1">Ana Huang</p>
+
+      <div class="mb-2 text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <small class="text-muted">(5)</small>
+      </div>
+
+      <a href="#"
+         class="btn btn-warning mt-auto"
+         data-bs-toggle="modal"
+         data-bs-target="#bookModal39">
+         View more
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fade" id="bookModal39" tabindex="-1">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content custom-modal">
+
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold">The Striker  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="row g-4">
+
+          <div class="col-md-7">
+            <p>
+              <strong>Author:</strong>
+              <a href="authors.html"
+                 class="author-link"
+                 data-bs-toggle="tooltip"
+                 data-bs-placement="top"
+                 data-bs-title="View more about the author in the authors page">
+             Ana Huang
+              </a>
+            </p>
+The Striker is a steamy sports romance that fuses high-stakes football with a powerful love story. In this contemporary novel from Ana Huang, Premier League sensation Asher Donovan clashes with a rival's sister as summer training turns into a magnetic battlefield of wills, heart, and temptation. Perfect for adults who savor witty banter, slow-burn heat, and emotionally charged journeys, The Striker invites readers to believe in a love that can outpace any scoreboard.
+
+Written in a contemporary, character-driven voice, The Striker unfolds through alternating perspectives that let you feel both players' inner drives, doubts, and desires. The pace is brisk, balancing on-field action with intimate, quiet moments that reveal resilience and vulnerability. The experience is rich with witty dialogue, sizzling tension, and a backdrop that shifts from stadium lights to the dance studio, showing how ambition and art collide with love.            <div class="keywords mt-3">
+              <span class="badge rounded-pill">Sports Romance</span>
+              <span class="badge rounded-pill">High Stakes Drama
+
+</span>
+              <span class="badge rounded-pill">Character Rivalry
+</span>
+              <span class="badge rounded-pill">Self-Discovery Journey</span>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="product-box">
+              <table class="table table-borderless mb-0">
+                <tr><td>Pages</td><td class="fw-semibold">400</td></tr>
+                <tr><td>Binding</td><td class="fw-semibold">Paperback</td></tr>
+                <tr><td>Audience</td><td class="fw-semibold">All </td></tr>
+                  <tr><td>Series</td><td class="fw-semibold">Yes</td></tr>
+                <tr><td>Language</td><td class="fw-semibold">English</td></tr>
+                <tr><td>Price</td><td class="fw-semibold">599/-</td></tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>
