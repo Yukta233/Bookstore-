@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+
+    :root {
+      --primary-color: #ffdd00;
+      --secondary-color: #915502;
+      --bg-color: #FAF7F2;
+      --text-dark: #2B2B2B;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* =============================
+       MAIN CONTAINER
+    ============================== */
+    .about-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 15px;
+    }
+
+    /* =============================
+       HERO SECTION
+    ============================== */
+    .about-hero {
+      background: linear-gradient(to right, #ffdd00, #ffe766);
+      border-radius: 20px;
+      padding: 60px 40px;
+      text-align: center;
+      animation: fadeDown 1s ease;
+    }
+
+    .about-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .about-hero p {
+      font-size: 1.2rem;
+      margin-top: 15px;
+    }
+
+    /* =============================
+       INFO BOXES
+    ============================== */
+    .info-box {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      height: 100%;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+      transition: 0.4s ease;
+      animation: fadeUp 1s ease;
+    }
+
+    .info-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 25px 40px rgba(0,0,0,0.15);
+    }
+
+    .info-box h4 {
+      color: var(--secondary-color);
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .info-box p {
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* =============================
+       FEATURE SECTION
+    ============================== */
+    .feature-section {
+      margin-top: 60px;
+      padding: 40px;
+      background: #fff;
+      border-radius: 20px;
+      animation: fadeUp 1.2s ease;
+    }
+
+    .feature-card {
+      text-align: center;
+      padding: 25px;
+      border-radius: 16px;
+      background: #fff8cc;
+      transition: 0.4s ease;
+      height: 100%;
+    }
+
+    .feature-card:hover {
+      background: #f8fca5;
+      transform: scale(1.05);
+    }
+
+    .feature-card h5 {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    /* =============================
+       STATS
+    ============================== */
+    .stats-box {
+      background: #ffdd00;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      animation: fadeUp 1.4s ease;
+    }
+
+    .stats-box h2 {
+      font-weight: 700;
+    }
+
+    /* =============================
+       ANIMATIONS
+    ============================== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* =============================
+       RESPONSIVE
+    ============================== */
+    @media (max-width: 768px) {
+      .about-hero h1 {
+        font-size: 2.2rem;
+      }
+      .about-hero p {
+        font-size: 1rem;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+ <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link text-dark" href="Bookstore.html">Bookstore</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="authors.html">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="about.html">About</a>
+  </li>
+</ul>
+  <div class="about-container">
+
+    <!-- HERO -->
+    <div class="about-hero mb-5">
+      <h1>About BookVerse</h1>
+      <p>A thoughtfully designed space where books, authors, and stories come alive.</p>
+    </div>
+
+    <!-- INFO SECTION -->
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>📚 Who We Are</h4>
+          <p>
+            BookVerse is a content-driven platform built for readers who love discovering books, authors,
+            and literary worlds. We focus on clean design, curated content, and an immersive reading experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>✨ Our Vision</h4>
+          <p>
+            Our vision is to create a visually rich digital library where users can explore genres,
+            learn about authors, and fall in love with stories—without distractions.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="info-box">
+          <h4>🎯 What We Offer</h4>
+          <p>
+            From beautifully designed book cards to author profiles and interactive modals,
+            BookVerse combines design and content to make browsing joyful.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURES -->
+    <div class="feature-section">
+      <h3 class="text-center mb-4 fw-bold">Why BookVerse?</h3>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card">
+            📖
+            <h5>Curated Books</h5>
+            <p>Hand-picked books across genres with meaningful descriptions.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            👩‍💻
+            <h5>Author Spotlights</h5>
+            <p>Learn about authors through elegant cards and profiles.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="feature-card">
+            🎨
+            <h5>Design-First</h5>
+            <p>80% design, 20% logic—focused on clean, modern UI.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="row mt-5 g-4">
+      <div class="col-md-4">
+        <div class="stats-box">
+          <h2>50+</h2>
+          <p>Books Featured</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stats-box">
+          <h2>20+</h2>
+          <p>Authors Highlighted</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stats-box">
+          <h2>100%</h2>
+          <p>Design Focused</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+ <footer class="foot">
+  <div class="footer-content">
+    
+    <div class="footer-brand">
+      <h3>BookVerse</h3>
+      <p>A thoughtfully curated space where stories, authors, and imagination come together.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow Us</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    © 2026 BookVerse. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
