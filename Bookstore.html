@@ -90,7 +90,71 @@
   transition: 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
-  
+@media (max-width: 992px) {
+
+  #container {
+    width: 95%;
+  }
+
+  .Box {
+    height: 150px;
+  }
+
+  .Box h2 {
+    line-height: 150px;
+    font-size: 1.6rem;
+  }
+
+  .section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .book-card img {
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+
+  #container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .Box {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .Box h2 {
+    line-height: normal;
+    font-size: 1.4rem;
+  }
+
+  .section {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .book-card img {
+    height: 180px;
+  }
+
+  .book-card .card-title {
+    font-size: 0.9rem;
+  }
+
+  .book-card .card-text {
+    font-size: 0.8rem;
+  }
+
+  .book-card .btn {
+    font-size: 0.8rem;
+    padding: 6px 8px;
+  }
+}
+
     </style>
 </head>
 <script>
@@ -136,7 +200,7 @@
     <a class="nav-link text-dark" href="authors.html">Authors</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link text-dark" href="#">About</a>
+    <a class="nav-link text-dark" href="about.html">About</a>
   </li>
 </ul>
     <div id="container">

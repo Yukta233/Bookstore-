@@ -431,3 +431,176 @@ body {
   min-height: 80px;
   margin-bottom: 20px;
 }
+/* =========================
+   RESPONSIVE FIXES
+   ========================= */
+
+/* ---------- TABLETS (≤ 992px) ---------- */
+@media (max-width: 992px) {
+
+  /* Navbar spacing */
+  .nav-item {
+    margin-right: 15px;
+  }
+
+  /* Hero section */
+  .hero-section {
+    padding: 30px 30px;
+    background-position: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Genre section */
+  .genre-section {
+    padding: 30px;
+  }
+
+  .genre-list li {
+    font-size: 2rem;
+  }
+
+  /* Book cards grid */
+  .section {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* Author card */
+  .author-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .author-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .author-card.expanded .author-img img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .author-content {
+    width: 100%;
+  }
+
+  /* Modal */
+  .modal-dialog {
+    max-width: 90%;
+  }
+
+  .product-box {
+    margin-top: 20px;
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .foot {
+    height: auto;
+    padding: 30px;
+  }
+}
+
+
+/* ---------- MOBILE PHONES (≤ 576px) ---------- */
+@media (max-width: 576px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  /* Navbar */
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding: 25px 20px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    font-size: 0.9rem;
+  }
+
+  /* Genre section */
+  .genre-section {
+    padding: 20px;
+  }
+
+  .genre-list li {
+    font-size: 1.6rem;
+  }
+
+  /* Book cards */
+  .section {
+    grid-template-columns: 1fr; /* One card per row */
+  }
+
+  .book-card img {
+    height: 180px;
+  }
+
+  .book-card {
+    padding: 15px;
+  }
+
+  /* Author cards */
+  .author-card {
+    padding: 18px;
+    gap: 15px;
+  }
+
+  .author-img img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .author-card.expanded .author-img img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .author-desc {
+    font-size: 0.9rem;
+  }
+
+  /* Modal */
+  .modal-dialog {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .modal-body {
+    padding: 15px;
+  }
+
+  .book-desc {
+    font-size: 0.9rem;
+  }
+
+  /* Scrollspy content box */
+  .scrollspy-box {
+    height: 180px;
+  }
+
+  /* Footer */
+  .footer-brand p {
+    max-width: 100%;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
