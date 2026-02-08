@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+    #container{
+            width:1400px;
+            height:auto;
+            margin: auto;
+        }
+</style>
+</head>
+<body>
+    <script>
+function toggleCard(el) {
+  const card = el.closest('.author-card');
+  card.classList.toggle('expanded');
+  el.textContent = card.classList.contains('expanded')
+    ? 'View less'
+    : 'View more';
+}
+</script>
+
+     <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link text-dark" href="Bookstore.html">Bookstore</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#">About</a>
+  </li>
+</ul>
+<div id="container">
+<section class="container my-5">
+  <div class="row g-4">
+
+    <!-- AUTHOR CARD 1 -->
+    <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/jamesclear .jpg" alt="James Clear">
+    </div>
+
+    <div class="author-content">
+      <h4>James Clear</h4>
+      <small class="text-muted">Author of <em>Atomic Habits</em></small>
+
+      <p class="author-desc">
+        James Clear is a bestselling author, speaker, and thought leader in the field of habit formation and self-improvement. He is widely known for his book Atomic Habits, which focuses on how small, consistent actions can lead to remarkable long-term results. James Clear combines psychology, neuroscience, and real-world examples to present practical strategies for personal and professional growth. His writing is clear, motivating, and highly actionable.
+      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal1"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal1"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Atomic Habits</h6>
+            <p>
+            A practical guide to building good habits and breaking bad ones through small, consistent changes that compound over time.% daily improvements compounds over time to create massive results.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+
+
+    <!-- AUTHOR CARD 2 -->
+    
+<div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/hector.jpeg" alt="hector Garcia">
+    </div>
+
+    <div class="author-content">
+      <h4>Hector Gracia</h4>
+      <small class="text-muted">Author of <em>Ikigai</em></small>
+
+      <p class="author-desc">
+        Hector Garcia is a Spanish author, entrepreneur, and cultural researcher best known for co-authoring Ikigai. He has lived in Japan for many years, where he studied Japanese culture, philosophy, and everyday practices that contribute to long and meaningful lives. Through his writing, Hector Garcia blends traditional Eastern wisdom with modern lifestyle insights, helping readers understand purpose, happiness, and balance. His work is calm, reflective, and deeply rooted in real-life experiences.
+      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+      <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal"
+>
+  View Books
+</button>
+
+    </div>
+    <!-- modal1 -->
+
+  </div>
+</div>
+
+
+<div
+  class="modal fade"
+  id="authorBooksModal"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Ikigai</h6>
+            <p>
+             Explores the Japanese concept of ikigai—finding purpose and joy through meaningful daily living
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The Ikigai Journey
+</h6>
+            <p>
+              A practical follow-up to Ikigai that helps readers apply purpose, mindfulness, and balance in everyday life.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Geek in Japan
+</h6>
+            <p>
+             A cultural exploration of modern Japanese society through anime, technology, food, and everyday traditions.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- 
+card 3 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/ankur-warikoo.png" alt="Ankur Warikoo">
+    </div>
+
+    <div class="author-content">
+      <h4>Ankur Warikoo</h4>
+      <small class="text-muted">Author of <em>Winning people without losing yourself</em></small>
+
+      <p class="author-desc">
+Ankur Warikoo is an Indian entrepreneur, bestselling author, and popular content creator known for his clear, practical advice on personal growth, money management, and career development. He is the founder of Nearbuy and has built a massive online following by sharing honest insights on discipline, habits, productivity, and financial independence, especially aimed at students and young professionals seeking clarity and long-term success.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal2"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal2"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Do Epic Shit</h6>
+            <p>
+             A candid guide on habits, money, success, and living intentionally.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Make Epic Money</h6>
+            <p>
+              A simple, no-nonsense guide to managing and growing personal wealth.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card4 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/ana huang .jpg" alt="Ana Huang">
+    </div>
+
+    <div class="author-content">
+      <h4>Ana Huang</h4>
+      <small class="text-muted">Author of <em>Twisted lies</em></small>
+
+      <p class="author-desc">
+Ana Huang is a bestselling contemporary romance author known for emotionally intense love stories that blend passion, vulnerability, and strong character arcs. Her writing often explores themes of trust, healing, ambition, and morally complex relationships, with confident heroines and brooding heroes at the center. Ana Huang’s novels are especially popular among new-adult and adult romance readers who enjoy slow-burn tension, sharp dialogue, and deeply personal journeys toward love.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal3"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal3"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Twisted Love</h6>
+            <p>
+             A dark, emotional romance about a guarded man and a hopeful woman whose bond challenges fear and trust.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Twisted Game</h6>
+            <p>
+            A forbidden royal romance filled with duty, desire, and intense emotional conflict.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Twisted Hate</h6>
+            <p>
+              An enemies-to-lovers story driven by sharp banter, unresolved tension, and buried emotions.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card 5 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/Colleenhoover.jpeg" alt="Collen Hoover">
+    </div>
+
+    <div class="author-content">
+      <h4>Collen Hoover</h4>
+      <small class="text-muted">Author of <em>It Ends With Us</em></small>
+
+      <p class="author-desc">
+Colleen Hoover is a bestselling American author known for emotionally powerful novels that explore love, trauma, healing, and human resilience. Her writing blends romance, drama, and psychological depth, often tackling difficult themes with honesty and compassion. Loved by both young-adult and adult readers, her stories focus on flawed characters, intense emotions, and relationships that leave a lasting impact long after the final page.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal4"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal4"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold"> It Ends With Us</h6>
+            <p>
+              A deeply emotional novel about love, strength, and breaking painful cycles.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Verity</h6>
+            <p>
+          A dark psychological thriller filled with shocking twists and moral tension.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Ugly Love</h6>
+            <p>
+            A raw romance exploring heartbreak, healing, and the weight of past trauma.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card6 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/katy-brent.jpeg" alt="Katy Brent">
+    </div>
+
+    <div class="author-content">
+      <h4>Katy Brent</h4>
+      <small class="text-muted">Author of <em>How to kill Men ans get away with it</em></small>
+
+      <p class="author-desc">
+Katy Brent is a British author known for writing sharp, darkly funny psychological thrillers with strong female leads. Her stories often explore obsession, ambition, and the hidden pressures placed on women in modern society, blending satire with suspense. With a bold narrative voice and unexpected twists, her books appeal to readers who enjoy gripping plots, morally complex characters, and thrillers that challenge social norms while remaining highly entertaining.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal5"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal5"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">How to Kill Men and Get Away With It</h6>
+            <p>
+              A darkly comic psychological thriller about obsession, revenge, and the consequences of toxic relationships, told with sharp wit and shocking twists
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The Kill List</h6>
+            <p>
+              A tense, satirical thriller that explores public shaming, social media outrage, and how far someone might go when pushed to the edge.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card7 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/l_frank_baum.jpeg" alt="frank bum">
+    </div>
+
+    <div class="author-content">
+      <h4>L Frank Baum</h4>
+      <small class="text-muted">Author of <em>The Wizard of Oz</em></small>
+
+      <p class="author-desc">
+L. Frank Baum was an American author best known for creating The Wonderful Wizard of Oz, one of the most beloved fantasy stories of all time. Writing in the late 19th and early 20th centuries, he helped shape modern children’s fantasy with imaginative worlds, memorable characters, and moral storytelling. His works emphasize courage, friendship, kindness, and self-belief, appealing to both children and adults across generations.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal6"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal6"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold"> The Wonderful Wizard of Oz</h6>
+            <p>
+              A magical adventure following Dorothy and her friends through the Land of Oz.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The Marvelous Land of Oz</h6>
+            <p>
+           A sequel that expands the Oz universe with new characters and political themes.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Ozma of Oz</h6>
+            <p>
+             A whimsical tale about loyalty, transformation, and the power of friendship.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+ <!-- card 8 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/Lisa-Jewell.jpeg" alt="Lisa Jewell">
+    </div>
+
+    <div class="author-content">
+      <h4>Lisa Jewell</h4>
+      <small class="text-muted">Author of <em>The Family Upstairs</em></small>
+
+      <p class="author-desc">
+Lisa Jewell is a bestselling British author celebrated for her gripping psychological thrillers and emotionally layered domestic fiction. Her novels often explore family secrets, obsession, trauma, and the dark truths hidden beneath ordinary lives. Known for her sharp character development and slow-burn suspense, Jewell keeps readers hooked with unsettling twists and realistic emotional depth, making her a favorite among fans of intelligent, character-driven thrillers.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal7"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal7"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Then She Was Gone</h6>
+            <p>
+             A haunting mystery about a mother uncovering the truth behind her daughter’s disappearance.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The Family Upstairs</h6>
+            <p>
+             A chilling domestic thriller centered on inheritance, control, and buried secrets.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">None of This Is True</h6>
+            <p>
+             A psychological thriller examining manipulation, fame, and dangerous storytelling.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card9 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/dan-brown.jpeg" alt="dan brown">
+    </div>
+
+    <div class="author-content">
+      <h4>Dan Brown</h4>
+      <small class="text-muted">Author of <em>Inferno</em></small>
+
+      <p class="author-desc">
+Dan Brown is an American author best known for fast-paced thrillers that blend history, religion, art, and conspiracy. His novels often follow symbologist Robert Langdon as he unravels ancient codes and hidden secrets within famous landmarks. Known for short chapters, cliffhangers, and intellectual puzzles, Brown’s writing keeps readers hooked while sparking curiosity about historical mysteries and secret societies.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal8"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal8"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold"> The Da Vinci Code</h6>
+            <p>
+              A high-stakes thriller involving religious symbols, secret societies, and hidden truths.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Angels & Demons</h6>
+            <p>
+            A race against time that blends science and religion in Vatican City
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Inferno</h6>
+            <p>
+              A dark, modern thriller inspired by Dante’s Divine Comedy and global catastrophe.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card 10 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/Jonathan_Swift.jpeg" alt="Johathan swift">
+    </div>
+
+    <div class="author-content">
+      <h4>Johathan Swift</h4>
+      <small class="text-muted">Author of <em>Gullivers Travel</em></small>
+
+      <p class="author-desc">
+Jonathan Swift was an Irish writer and satirist best known for his sharp wit and powerful social criticism. Writing in the 18th century, he used satire to expose human folly, political corruption, and social injustice, often blending humor with dark realism. His works remain influential for their bold commentary on society, morality, and human nature.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal9"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal9"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Gulliver’s Travels</h6>
+            <p>
+             A satirical adventure that critiques politics, science, and human pride through imaginative voyages.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">A Modest Proposal</h6>
+            <p>
+             A famous satirical essay highlighting social inequality through shocking irony.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The Battle of the Books</h6>
+            <p>
+             A witty satire on intellectual debates and cultural conflict
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card11 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/shrijeet shandilya.jpeg" alt="shrijeet">
+    </div>
+
+    <div class="author-content">
+      <h4>shrijeet Shandilya</h4>
+      <small class="text-muted">Author of <em>Can We Be Stranger Again?</em></small>
+
+      <p class="author-desc">
+Shrijeet Shandilya is an Indian author known for writing emotionally driven contemporary and young-adult fiction that explores friendship, love, heartbreak, and personal growth. His stories focus on relatable characters, modern relationships, and the complexities of human emotions, making his work especially popular among young readers who enjoy realistic, heartfelt storytelling      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal10"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal10"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Can We Be Strangers Again?</h6>
+            <p>
+              A poignant coming-of-age novel about friendship, love, and the pain of growing apart.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card12 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/Chetan Bhagat.jpeg" alt="Chetan Bhagat">
+    </div>
+
+    <div class="author-content">
+      <h4>Chetan Bhagat</h4>
+      <small class="text-muted">Author of <em>2 States</em></small>
+
+      <p class="author-desc">
+Chetan Bhagat is an Indian author, columnist, and motivational speaker known for writing relatable, contemporary fiction that reflects modern Indian youth, relationships, and career struggles. His simple storytelling style and socially relevant themes have made his books widely popular, especially among young adult readers. Bhagat’s work often blends romance, ambition, and social commentary, making complex issues accessible to a broad audience.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal11"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal11"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Five Point Someone</h6>
+            <p>
+             A campus novel about friendship, pressure, and redefining success.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">2 States</h6>
+            <p>
+             A romantic story exploring cultural differences and family expectations
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">The 3 Mistakes of My Life</h6>
+            <p>
+             A tale of friendship, dreams, and life-altering choices.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card13 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/hannah grace.jpeg" alt="Hanna grace">
+    </div>
+
+    <div class="author-content">
+      <h4>Hannah Grace</h4>
+      <small class="text-muted">Author of <em> Daydream</em></small>
+
+      <p class="author-desc">
+Hannah Grace is a contemporary romance author known for warm, comforting stories that blend humor, emotional growth, and slow-burn relationships. Her novels often feature lovable characters, healthy communication, and themes of self-acceptance, making her especially popular among new-adult readers who enjoy cozy yet emotionally rich love stories      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal12"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal12"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Icebreaker</h6>
+            <p>
+              A college sports romance filled with banter, friendship, and heartfelt moments
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Wildfire</h6>
+            <p>
+              A summer-camp romance exploring vulnerability, healing, and second chances.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Daydream</h6>
+            <p>
+             A soft, character-driven romance centered on emotional connection and personal growth.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card14 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="/Images/tahereh.jpeg" alt="Taheran Mahi">
+    </div>
+
+    <div class="author-content">
+      <h4>Tahereh Mahi</h4>
+      <small class="text-muted">Author of <em>Shatter Me</em></small>
+
+      <p class="author-desc">
+Tahereh Mafi is an American author best known for her emotionally intense young-adult and fantasy novels. Her writing is recognized for its lyrical style, striking imagery, and deep exploration of identity, power, and self-discovery. Mafi’s stories often center on strong yet vulnerable female protagonists navigating dystopian worlds, inner turmoil, and complex relationships, making her work especially popular among teen and young-adult readers.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal13"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal13"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">Shatter Me</h6>
+            <p>
+              A dystopian romance about a girl whose touch is deadly and her journey toward self-acceptance and power.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Unravel Me</h6>
+            <p>
+             The sequel that deepens the emotional and political stakes of the Shatter Me world.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Restore Me</h6>
+            <p>
+            A continuation exploring leadership, truth, and the cost of power.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+<!-- card15 -->
+ <div class="col-md-6 mb-4">
+  <div class="author-card">
+
+    <div class="author-img">
+      <img src="Images/jackson holly.jpeg" alt="Hooly jackson">
+    </div>
+
+    <div class="author-content">
+      <h4>Holly Jackson</h4>
+      <small class="text-muted">Author of <em>A Good Girls Guide To Murder</em></small>
+
+      <p class="author-desc">
+Holly Jackson is a British author known for her gripping young-adult crime and mystery novels. She gained international fame for A Good Girl’s Guide to Murder, praised for its clever plotting and modern investigative style. Jackson’s writing blends suspense, social commentary, and strong female leads, often exploring themes of justice, truth, and moral complexity, making her a favorite among teens and adult mystery readers.      </p>
+
+      <span class="view-more" onclick="toggleCard(this)">View more</span>
+
+       <button
+  class="btn btn-outline-warning btn-sm mt-6"
+  data-bs-toggle="modal"
+  data-bs-target="#authorBooksModal14"
+>
+  View Books
+</button>
+    </div>
+
+  </div>
+</div>
+<div
+  class="modal fade"
+  id="authorBooksModal14"
+  tabindex="-1"
+  aria-labelledby="authorBooksModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="authorBooksModalLabel">
+          Books by the Author
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <div
+          class="scrollspy-box"
+          tabindex="0"
+        >
+          <section class="spy-section">
+            <h6 class="fw-bold">A Good Girl’s Guide to Murder</h6>
+            <p>
+              A teen investigates a closed murder case in her town
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">Good Girl, Bad Blood</h6>
+            <p>
+             A sequel that dives deeper into secrets and online investigations.
+            </p>
+          </section>
+
+          <section class="spy-section">
+            <h6 class="fw-bold">As Good As Dead</h6>
+            <p>
+              A dark, intense finale with high emotional and psychological stakes.
+            </p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Footer REMOVED -->
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+
+
+</div>    
+</body>
+</html>
