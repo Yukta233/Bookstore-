@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="CSS/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    /* ===== FEATURED PAGE ===== */
+.featured-page {
+  max-width: 1200px;
+}
+
+/* Section Title */
+.section-title {
+  font-weight: 600;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* Horizontal Card */
+.featured-card {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  animation: fadeUp 0.6s ease both;
+}
+
+.featured-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.featured-card img {
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Content */
+.featured-content h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.featured-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Quote Section */
+.quote-section {
+  background: #fff6cc;
+  padding: 40px 30px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #ffdd00;
+}
+
+.quote-section p {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote-section span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .featured-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-card img {
+    margin: 0 auto;
+  }
+
+  .featured-content {
+    text-align: center;
+  }
+}
+
+</style>
+<body>
+    <ul class="nav justify-content-end p-3 ">
+        <li class="nav-item d-flex align-items-center me-auto">
+      <!-- <img src="logo.png" width="40" height="40" class="me-2"> -->
+      <span class=" fw-bold fs-5 logo ms-3">BookVerse</span>
+    </li>
+  <li class="nav-item ">
+    <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+  </li>
+  <li class="nav-item ">
+    <a class="nav-link text-dark" href="Bookstore.html">Bookstore</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="authors.html">Authors</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="about.html">About</a>
+  </li>
+</ul>
+<div class="container my-5 featured-page">
+
+  <!-- PAGE HEADER -->
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Featured Reads</h2>
+    <p class="text-muted">
+      Handpicked stories loved by readers and curated by BookVerse
+    </p>
+  </div>
+
+  <!-- ================= EDITOR'S CHOICE ================= -->
+  <section class="featured-section">
+    <h4 class="section-title">Editor’s Choice ⭐</h4>
+
+    <div class="featured-card" style="background-color: rgb(243, 210, 216);">
+      <img src="https://www.crossword.in/cdn/shop/files/Atomic_Habits_1_1.webp?v=1745491776" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-warning text-dark mb-2">Editor's Pick</span>
+        <h5>Atomic Habits – James Clear</h5>
+        <p>A practical guide to building better habits through small, consistent changes.
+James Clear explains how tiny improvements compound over time to create remarkable results.
+The book blends psychology, real-life examples, and actionable strategies.
+Ideal for readers seeking personal growth, productivity, and clarity.</p>
+      </div>
+    </div>
+
+    <div class="featured-card" style="background-color: rgb(243, 210, 216)">
+      <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-the-alchemist-paperback-coelho-paulo-40421773967577.jpg?v=1745721373" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-warning text-dark mb-2">Editor's Pick</span>
+        <h5>The Alchemist – Paulo Coelho</h5>
+        <p>A philosophical novel about following dreams and discovering one’s true purpose.
+Through the journey of a young shepherd, the story explores destiny and self-belief.
+Its simple storytelling carries deep life lessons.
+A timeless read that inspires reflection and courage.Its simple language carries deep meaning, making it inspiring and reflective. Readers often find personal motivation within its pages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= QUOTE SECTION ================= -->
+  <div class="quote-section my-5">
+    <p>
+      "Books are a uniquely portable magic. They allow us to travel without moving our feet, to live lives we’ve never lived, and to feel emotions we’ve never known.”
+    </p>
+    <span>— Stephen King</span>
+  </div>
+
+  <!-- ================= TRENDING THIS MONTH ================= -->
+  <section class="featured-section">
+    <h4 class="section-title">Trending This Month 🔥</h4>
+
+    <div class="featured-card" style="background-color: rgb(220, 247, 255)">
+      <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-kunex-it-ends-with-us-sometimes-the-one-who-loves-you-is-the-one-who-hurts-you-the-most-colleen-hoover-40434941362393.jpg?v=1745693570" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-danger mb-2">Trending</span>
+        <h5>It Ends With Us – Colleen Hoover</h5>
+        <p>An emotionally intense novel that explores love, trauma, and difficult choices.
+The story follows Lily as she navigates relationships shaped by her past.
+Raw, honest, and deeply moving, it stays with readers long after the last page.
+One of the most talked-about contemporary romances.It sheds light on relationships and emotional strength, leaving a lasting impact on readers. Many connect strongly with its realistic portrayal of life.</p>
+      </div>
+    </div>
+
+    <div class="featured-card" style="background-color: rgb(220, 247, 255)">
+      <img src="https://www.crossword.in/cdn/shop/files/fourth-wing-discover-the-instant-sunday-times-and-number-one-global-bestselling-phenomenon-the-empyrean-paperback-yarros-rebecca-bk0500663-42237245128921.jpg?v=1746621625" alt="Book Cover">
+      <div class="featured-content" >
+        <span class="badge bg-danger mb-2">Trending</span>
+        <h5>Fourth Wing – Rebecca Yarros</h5>
+        <p>A high-stakes fantasy set in a dangerous dragon-riding academy.
+The protagonist must survive brutal training while uncovering dark secrets.
+Packed with action, romance, and tension, the pacing is fast and addictive.
+Perfect for fans of fantasy and strong female leads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MOST LOVED BOOKS ================= -->
+  <section class="featured-section">
+    <h4 class="section-title">Most Loved Books ❤️</h4>
+
+    <div class="featured-card" style="background-color: rgb(229, 252, 201)">
+      <img src="https://www.crossword.in/cdn/shop/products/crosswordonline-books-default-title-the-fault-in-our-stars-paperback-green-john-40421817319641.jpg?v=1745996879" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-success mb-2">Loved</span>
+        <h5>The Fault in Our Stars – John Green</h5>
+        <p>A heartfelt love story between two teenagers living with illness.
+The novel balances humor, grief, and hope with emotional depth.
+Its honest portrayal of love and loss resonates deeply with readers.
+A modern classic that touches the soul.</p>
+      </div>
+    </div>
+
+    <div class="featured-card" style="background-color: rgb(229, 252, 201)">
+      <img src="https://www.crossword.in/cdn/shop/files/81IsnbjnoOL._SL1500.jpg?v=1750246780" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-success mb-2">Loved</span>
+        <h5>Pride and Prejudice – Jane Austen</h5>
+        <p>A timeless romance centered on love, misunderstandings, and social class.
+Elizabeth Bennet’s sharp wit and independence drive the story.
+The novel blends humor with emotional insight and strong characters.
+A beloved classic that never loses relevance.Its sharp dialogue and social commentary still feel relevant today. This book celebrates independent thinking and emotional growth.</p>
+      </div>
+    </div>
+  </section>
+
+<div class="quote-section my-5">
+    <p>
+      “Books are the quietest and most constant of friends; they are the most accessible and wisest of counselors, and the most patient of teachers.”
+    </p>
+    <span>— Charles W. Eliot</span>
+  </div>
+
+  <!-- ================= READERS' FAVOURITE ================= -->
+  <section class="featured-section">
+    <h4 class="section-title">Readers’ Favourite 📚</h4>
+
+    <div class="featured-card" style="background-color: rgb(255, 231, 202)">
+      <img src="https://www.crossword.in/cdn/shop/files/61rmOLsdBiL._SL1000_989f9ac2-de34-4511-8c8c-392c9c3e221c.jpg?v=1769760803" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-primary mb-2">Favourite</span>
+        <h5>The Silent Patient – Alex Michaelides</h5>
+        <p>A gripping psychological thriller about a woman who stops speaking after a crime.
+The mystery unfolds through therapy sessions and hidden truths.
+Dark, suspenseful, and cleverly paced from start to finish.
+Its shocking twist makes it unforgettable.</p>
+      </div>
+    </div>
+
+    <div class="featured-card" style="background-color: rgb(255, 231, 202)">
+      <img src="https://www.crossword.in/cdn/shop/products/hachette-uk-books-default-title-harry-potter-and-the-cursed-child-parts-one-and-two-the-official-playscript-of-the-original-west-paperback-rowling-j-k-paperback-rowling-j-k-40359267238105.jpg?v=1745732606" alt="Book Cover">
+      <div class="featured-content">
+        <span class="badge bg-primary mb-2">Favourite</span>
+        <h5>Harry Potter and the Sorcerer’s Stone – J.K. Rowling</h5>
+        <p>The magical beginning of a legendary fantasy series.
+Harry discovers his identity and enters the wizarding world of Hogwarts.
+Filled with wonder, friendship, and adventure.
+A favorite across all ages and generations.The book creates a rich, imaginative universe that appeals to readers of all ages. It’s comforting, exciting, and endlessly rereadable.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+ <footer class="foot">
+  <div class="footer-content">
+    
+    <div class="footer-brand">
+      <h3>BookVerse</h3>
+      <p>A thoughtfully curated space where stories, authors, and imagination come together.</p>
+    </div>
+    <div class="footer-links">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Genres</a></li>
+        <li><a href="#">Books</a></li>
+        <li><a href="#">Authors</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow Us</h5>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    © 2026 BookVerse. All rights reserved.
+  </div>
+</footer>
+    
+</body>
+</html>
