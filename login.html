@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | BookVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #ffdd00;
+      --secondary-color: #915502;
+      --bg-light: #ffffff;
+      --text-dark: #2b2b2b;
+    }
+
+    /* ===== Body Background ===== */
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("Images/loginbg.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar-custom {
+      background-color: var(--primary-color);
+      padding:15px;
+    }
+    .nav-item{
+        margin-right:40px;
+    }
+
+    .logo {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 1.6rem;
+      color: black;
+    }
+
+    .nav-link {
+      color: var(--text-dark);
+      font-weight: 500;
+      margin-left: 15px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--secondary-color);
+    }
+
+    /* ===== Login Page Wrapper ===== */
+    .login-page {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 15px;
+    }
+
+    /* ===== Login Card ===== */
+    .login-card {
+      background: var(--bg-light);
+      border-radius: 20px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+      padding: 40px 35px;
+      max-width: 420px;
+      width: 100%;
+      animation: fadeScale 0.6s ease;
+    }
+
+    .login-title {
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--text-dark);
+    }
+
+    .login-subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    /* ===== Inputs ===== */
+    .form-control {
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 0.95rem;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 0 0.15rem rgba(255,221,0,0.4);
+      border-color: var(--primary-color);
+    }
+
+    /* ===== Button ===== */
+    .login-btn {
+      background-color: var(--primary-color);
+      border: none;
+      color: #000;
+      font-weight: 600;
+      border-radius: 12px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background-color: #f5d400;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Footer ===== */
+    .login-footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    /* ===== Animation ===== */
+    @keyframes fadeScale {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 576px) {
+      .login-card {
+        padding: 30px 25px;
+      }
+      .login-title {
+        font-size: 1.9rem;
+      }
+      .navbar-custom {
+        padding: 10px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container-fluid">
+      <span class="logo fw-bold fs-5 logo ms-3">BookVerse</span>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="Bookstore.html">Bookstore</a></li>
+          <li class="nav-item"><a class="nav-link" href="authors.html">Authors</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- LOGIN SECTION -->
+  <div class="login-page">
+    <div class="login-card">
+
+      <h2 class="login-title">Welcome to BookVerse</h2>
+      <p class="login-subtitle">Login access coming soon ✨</p>
+
+      <form onsubmit="showAlert(event)">
+        <div class="mb-3">
+          <label class="form-label">Full Name</label>
+          <input type="text" class="form-control" placeholder="Enter your name" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+        </div>
+
+        <button type="submit" class="login-btn">Submit</button>
+      </form>
+
+      <div class="login-footer">
+        © 2026 BookVerse. All rights reserved.
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function showAlert(e) {
+      e.preventDefault();
+      alert("Login will come soon 🚀");
+    }
+  </script>
+
+</body>
+</html>

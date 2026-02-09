@@ -92,7 +92,7 @@ body {
       #ae8682 45%,
       #9d5353 100%
     ),
-    url("/Images/pexels-ellusionist-19015217.jpg");
+    url("../Images/pexels-ellusionist-19015217.jpg");
 
   background-size: cover;
   background-position: left center;
